@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-SemiboldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova/ProximaNova-ExtraboldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Proxima Nova", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-heading: "Proxima Nova", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-display: "Barlow", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, monospace;
+
+  /* Technical Policy Palette - Precision & Clarity */
+  --color-paper: #F8FAFC;
+  --color-paper-strong: #E5E7EB;
+  --color-ink: #0B1121;
+  --color-ink-muted: #475569;
+  --color-dark-green: #163331; /* homepage titles */
+  --color-surface: #FFFFFF;
+  --color-line: #E5E7EB;
+  --color-grey-light: #F3F4F6; /* lighter grey for card backgrounds */
+
+  --color-accent: #207B6A;
+  --color-teal: #207B6A; /* fixed teal, unaffected by per-action accent colours */
+  --color-accent-light: #E8F3F1;
+  --color-mint: #B3DFCD;
+  --color-orange: #F56E28;
+
+  --color-success: #15803D;
+  --color-success-bg: #DCFCE7;
+
+  --color-warning: #F56E28;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: "Proxima Nova", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Proxima Nova", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: -0.015em;
+}
+
+/* Typography system: title-h1 / title-h2 / body-text / body-text-md / body-text-sm */
+/* Layered as components so Tailwind utilities on the same element (text-ink-muted,
+   text-surface, leading-relaxed, ...) override these defaults. */
+@layer components {
+  .title-h1 {
+    font-family: "Barlow", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.15;
+    color: var(--color-ink);
+  }
+  .title-h2 {
+    font-family: "Proxima Nova", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+  .body-text {
+    font-family: "Proxima Nova", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--color-ink);
+  }
+  .body-text-md {
+    font-family: "Proxima Nova", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-ink);
+  }
+  .body-text-sm {
+    font-family: "Proxima Nova", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-ink);
+  }
+}
+
+/* Base override for sharp, precise borders (layered so border-color utilities,
+   e.g. border-[#F56E28], can still override this default). */
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
+}
+
+/* Precise scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E5E7EB;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

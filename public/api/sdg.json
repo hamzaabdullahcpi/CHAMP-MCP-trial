@@ -1,0 +1,666 @@
+{
+  "Angola": {
+    "participation": "44.4%",
+    "participationYear": 2024,
+    "localDrr": "44.4%",
+    "localDrrYear": 2018
+  },
+  "Argentina": {
+    "participation": "54.0%",
+    "participationYear": 2024
+  },
+  "Australia": {
+    "participation": "57.6%",
+    "participationYear": 2024,
+    "localDrr": "43.7%",
+    "localDrrYear": 2024
+  },
+  "Austria": {
+    "participation": "71.3%",
+    "participationYear": 2024,
+    "localDrr": "40.6%",
+    "localDrrYear": 2018
+  },
+  "Bolivia": {
+    "participation": "54.0%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2021
+  },
+  "Brazil": {
+    "participation": "66.9%",
+    "participationYear": 2024,
+    "localDrr": "46.6%",
+    "localDrrYear": 2024
+  },
+  "Bulgaria": {
+    "participation": "56.5%",
+    "participationYear": 2024,
+    "localDrr": "55.1%",
+    "localDrrYear": 2023
+  },
+  "Canada": {
+    "participation": "66.3%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2025
+  },
+  "Chile": {
+    "participation": "50.5%",
+    "participationYear": 2024,
+    "localDrr": "33.6%",
+    "localDrrYear": 2024
+  },
+  "China": {
+    "participation": "58.3%",
+    "participationYear": 2024
+  },
+  "Colombia": {
+    "participation": "61.9%",
+    "participationYear": 2024,
+    "localDrr": "57.7%",
+    "localDrrYear": 2024
+  },
+  "Costa Rica": {
+    "participation": "48.5%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Czechia": {
+    "participation": "74.8%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Denmark": {
+    "participation": "69.2%",
+    "participationYear": 2024
+  },
+  "Ecuador": {
+    "participation": "60.3%",
+    "participationYear": 2024,
+    "localDrr": "81.6%",
+    "localDrrYear": 2023
+  },
+  "Egypt": {
+    "participation": "55.4%",
+    "participationYear": 2024,
+    "localDrr": "92.6%",
+    "localDrrYear": 2024
+  },
+  "El Salvador": {
+    "participation": "61.5%",
+    "participationYear": 2024
+  },
+  "Finland": {
+    "participation": "100.0%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2019
+  },
+  "France": {
+    "participation": "66.4%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2023
+  },
+  "Germany": {
+    "participation": "100.0%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2015
+  },
+  "Greece": {
+    "participation": "51.4%",
+    "participationYear": 2024
+  },
+  "Guatemala": {
+    "participation": "43.2%",
+    "participationYear": 2024,
+    "localDrr": "92.4%",
+    "localDrrYear": 2024
+  },
+  "India": {
+    "participation": "54.2%",
+    "participationYear": 2024,
+    "localDrr": "93.1%",
+    "localDrrYear": 2022
+  },
+  "Indonesia": {
+    "participation": "69.8%",
+    "participationYear": 2024,
+    "localDrr": "62.8%",
+    "localDrrYear": 2024
+  },
+  "Iran (Islamic Republic of)": {
+    "participation": "56.7%",
+    "participationYear": 2024
+  },
+  "Ireland": {
+    "participation": "65.0%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2017
+  },
+  "Italy": {
+    "participation": "44.2%",
+    "participationYear": 2024,
+    "localDrr": "88.5%",
+    "localDrrYear": 2022
+  },
+  "Jamaica": {
+    "participation": "31.3%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2023
+  },
+  "Jordan": {
+    "participation": "60.7%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Kenya": {
+    "participation": "61.5%",
+    "participationYear": 2024,
+    "localDrr": "74.5%",
+    "localDrrYear": 2024
+  },
+  "Lao People's Democratic Republic": {
+    "participation": "53.8%",
+    "participationYear": 2024,
+    "localDrr": "14.7%",
+    "localDrrYear": 2024
+  },
+  "Malaysia": {
+    "participation": "70.7%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2025
+  },
+  "Malta": {
+    "participation": "39.8%",
+    "participationYear": 2024
+  },
+  "Mexico": {
+    "participation": "36.9%",
+    "participationYear": 2024,
+    "localDrr": "96.9%",
+    "localDrrYear": 2024
+  },
+  "Mozambique": {
+    "participation": "55.1%",
+    "participationYear": 2024,
+    "localDrr": "17.5%",
+    "localDrrYear": 2025
+  },
+  "Namibia": {
+    "participation": "59.2%",
+    "participationYear": 2024,
+    "localDrr": "1.8%",
+    "localDrrYear": 2024
+  },
+  "Netherlands (Kingdom of the)": {
+    "participation": "72.4%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2017
+  },
+  "Niger": {
+    "participation": "76.9%",
+    "participationYear": 2024,
+    "localDrr": "84.7%",
+    "localDrrYear": 2018
+  },
+  "Nigeria": {
+    "participation": "64.0%",
+    "participationYear": 2024,
+    "localDrr": "2.7%",
+    "localDrrYear": 2022
+  },
+  "Norway": {
+    "participation": "67.5%",
+    "participationYear": 2024,
+    "localDrr": "98.0%",
+    "localDrrYear": 2019
+  },
+  "Pakistan": {
+    "participation": "55.7%",
+    "participationYear": 2024,
+    "localDrr": "29.6%",
+    "localDrrYear": 2020
+  },
+  "Peru": {
+    "participation": "69.5%",
+    "participationYear": 2024,
+    "localDrr": "87.5%",
+    "localDrrYear": 2023
+  },
+  "Poland": {
+    "participation": "100.0%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2023
+  },
+  "Portugal": {
+    "participation": "39.6%",
+    "participationYear": 2024,
+    "localDrr": "19.2%",
+    "localDrrYear": 2023
+  },
+  "Qatar": {
+    "participation": "100.0%",
+    "participationYear": 2020,
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Rwanda": {
+    "participation": "74.0%",
+    "participationYear": 2024
+  },
+  "Sao Tome and Principe": {
+    "participation": "73.8%",
+    "participationYear": 2024
+  },
+  "Saudi Arabia": {
+    "participation": "53.5%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2020
+  },
+  "Seychelles": {
+    "participation": "80.7%",
+    "participationYear": 2024
+  },
+  "South Africa": {
+    "participation": "67.7%",
+    "participationYear": 2024,
+    "localDrr": "98.1%",
+    "localDrrYear": 2020
+  },
+  "Spain": {
+    "participation": "63.0%",
+    "participationYear": 2024
+  },
+  "State of Palestine": {
+    "participation": "72.0%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2018
+  },
+  "Switzerland": {
+    "participation": "100.0%",
+    "participationYear": 2024,
+    "localDrr": "50.0%",
+    "localDrrYear": 2022
+  },
+  "Syrian Arab Republic": {
+    "participation": "49.6%",
+    "participationYear": 2024
+  },
+  "Türkiye": {
+    "participation": "53.1%",
+    "participationYear": 2024,
+    "localDrr": "91.4%",
+    "localDrrYear": 2021
+  },
+  "Uganda": {
+    "participation": "73.1%",
+    "participationYear": 2024,
+    "localDrr": "25.9%",
+    "localDrrYear": 2022
+  },
+  "Ukraine": {
+    "participation": "48.1%",
+    "participationYear": 2024,
+    "localDrr": "92.6%",
+    "localDrrYear": 2023
+  },
+  "United Arab Emirates": {
+    "participation": "60.0%",
+    "participationYear": 2024,
+    "localDrr": "42.9%",
+    "localDrrYear": 2020
+  },
+  "United Kingdom": {
+    "participation": "66.5%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2021
+  },
+  "United States": {
+    "participation": "78.4%",
+    "participationYear": 2024,
+    "localDrr": "100.0%",
+    "localDrrYear": 2021
+  },
+  "Venezuela": {
+    "participation": "49.9%",
+    "participationYear": 2024
+  },
+  "Afghanistan": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2017
+  },
+  "Albania": {
+    "localDrr": "16.4%",
+    "localDrrYear": 2024
+  },
+  "Algeria": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Andorra": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Antigua and Barbuda": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2008
+  },
+  "Armenia": {
+    "localDrr": "66.2%",
+    "localDrrYear": 2024
+  },
+  "Bahrain": {
+    "localDrr": "50.0%",
+    "localDrrYear": 2024
+  },
+  "Bangladesh": {
+    "localDrr": "11.7%",
+    "localDrrYear": 2020
+  },
+  "Barbados": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2024
+  },
+  "Belarus": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Belgium": {
+    "localDrr": "92.6%",
+    "localDrrYear": 2024
+  },
+  "Benin": {
+    "localDrr": "58.4%",
+    "localDrrYear": 2020
+  },
+  "Bhutan": {
+    "localDrr": "51.3%",
+    "localDrrYear": 2018
+  },
+  "Bosnia and Herzegovina": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2018
+  },
+  "Botswana": {
+    "localDrr": "62.5%",
+    "localDrrYear": 2024
+  },
+  "Burkina Faso": {
+    "localDrr": "9.0%",
+    "localDrrYear": 2019
+  },
+  "Burundi": {
+    "localDrr": "33.9%",
+    "localDrrYear": 2024
+  },
+  "Cabo Verde": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2021
+  },
+  "Cambodia": {
+    "localDrr": "88.0%",
+    "localDrrYear": 2022
+  },
+  "Comoros": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2017
+  },
+  "Côte d'Ivoire": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2020
+  },
+  "Croatia": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2017
+  },
+  "Cyprus": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2023
+  },
+  "Estonia": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Eswatini": {
+    "localDrr": "23.3%",
+    "localDrrYear": 2024
+  },
+  "Ethiopia": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2019
+  },
+  "Fiji": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2022
+  },
+  "Gambia": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2025
+  },
+  "Georgia": {
+    "localDrr": "11.8%",
+    "localDrrYear": 2024
+  },
+  "Ghana": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Hungary": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Iraq": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2018
+  },
+  "Japan": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Kazakhstan": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Kiribati": {
+    "localDrr": "26.1%",
+    "localDrrYear": 2021
+  },
+  "Kuwait": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2017
+  },
+  "Kyrgyzstan": {
+    "localDrr": "41.7%",
+    "localDrrYear": 2024
+  },
+  "Lebanon": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2019
+  },
+  "Liberia": {
+    "localDrr": "80.0%",
+    "localDrrYear": 2021
+  },
+  "Lithuania": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2023
+  },
+  "Malawi": {
+    "localDrr": "79.4%",
+    "localDrrYear": 2022
+  },
+  "Maldives": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2024
+  },
+  "Marshall Islands": {
+    "localDrr": "75.0%",
+    "localDrrYear": 2022
+  },
+  "Mauritius": {
+    "localDrr": "8.3%",
+    "localDrrYear": 2024
+  },
+  "Micronesia (Federated States of)": {
+    "localDrr": "11.7%",
+    "localDrrYear": 2021
+  },
+  "Monaco": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Mongolia": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2021
+  },
+  "Montenegro": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2024
+  },
+  "Myanmar": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2023
+  },
+  "Nauru": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2022
+  },
+  "Nepal": {
+    "localDrr": "16.9%",
+    "localDrrYear": 2019
+  },
+  "New Zealand": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Oman": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Palau": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2021
+  },
+  "Papua New Guinea": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2020
+  },
+  "Philippines": {
+    "localDrr": "56.3%",
+    "localDrrYear": 2024
+  },
+  "Republic of Korea": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2023
+  },
+  "Republic of Moldova": {
+    "localDrr": "4.2%",
+    "localDrrYear": 2024
+  },
+  "Romania": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2023
+  },
+  "Russia": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Samoa": {
+    "localDrr": "3.3%",
+    "localDrrYear": 2023
+  },
+  "Senegal": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2024
+  },
+  "Serbia": {
+    "localDrr": "75.9%",
+    "localDrrYear": 2023
+  },
+  "Slovenia": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Solomon Islands": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2021
+  },
+  "Somalia": {
+    "localDrr": "42.9%",
+    "localDrrYear": 2018
+  },
+  "Sri Lanka": {
+    "localDrr": "9.4%",
+    "localDrrYear": 2022
+  },
+  "Sudan": {
+    "localDrr": "11.1%",
+    "localDrrYear": 2019
+  },
+  "Sweden": {
+    "localDrr": "0.0%",
+    "localDrrYear": 2019
+  },
+  "Tajikistan": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2022
+  },
+  "Thailand": {
+    "localDrr": "86.2%",
+    "localDrrYear": 2024
+  },
+  "Togo": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Tonga": {
+    "localDrr": "33.5%",
+    "localDrrYear": 2022
+  },
+  "Trinidad and Tobago": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  },
+  "Turkmenistan": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2019
+  },
+  "Tuvalu": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2022
+  },
+  "United Republic of Tanzania": {
+    "localDrr": "24.5%",
+    "localDrrYear": 2024
+  },
+  "Uruguay": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2020
+  },
+  "Uzbekistan": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2021
+  },
+  "Vanuatu": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2021
+  },
+  "Zimbabwe": {
+    "localDrr": "100.0%",
+    "localDrrYear": 2024
+  }
+}

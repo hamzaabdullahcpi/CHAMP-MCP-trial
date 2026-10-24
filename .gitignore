@@ -1,0 +1,14 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+CHAMP-Tool-main/
+CHAMP-Tool-main2/
+*.zip
+*.bundle
+.aistudio/
+.build_done

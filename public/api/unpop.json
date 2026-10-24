@@ -1,0 +1,2146 @@
+{
+  "Afghanistan": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 83,
+    "totalCities": 85,
+    "largeCitiesPct": "2.4",
+    "smallCitiesPct": "97.6"
+  },
+  "Albania": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 6,
+    "totalCities": 6,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Algeria": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 107,
+    "totalCities": 109,
+    "largeCitiesPct": "1.8",
+    "smallCitiesPct": "98.2"
+  },
+  "Angola": {
+    "megaCities": 1,
+    "largeCities": 3,
+    "smallCities": 53,
+    "totalCities": 57,
+    "largeCitiesPct": "5.3",
+    "smallCitiesPct": "93.0"
+  },
+  "Azerbaijan": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 21,
+    "totalCities": 22,
+    "largeCitiesPct": "4.5",
+    "smallCitiesPct": "95.5"
+  },
+  "Argentina": {
+    "megaCities": 1,
+    "largeCities": 3,
+    "smallCities": 73,
+    "totalCities": 77,
+    "largeCitiesPct": "3.9",
+    "smallCitiesPct": "94.8"
+  },
+  "Australia": {
+    "megaCities": 0,
+    "largeCities": 4,
+    "smallCities": 25,
+    "totalCities": 29,
+    "largeCitiesPct": "13.8",
+    "smallCitiesPct": "86.2"
+  },
+  "Austria": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 7,
+    "totalCities": 8,
+    "largeCitiesPct": "12.5",
+    "smallCitiesPct": "87.5"
+  },
+  "Bahrain": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 0,
+    "totalCities": 1,
+    "largeCitiesPct": "100.0",
+    "smallCitiesPct": "0.0"
+  },
+  "Bangladesh": {
+    "megaCities": 1,
+    "largeCities": 7,
+    "smallCities": 224,
+    "totalCities": 232,
+    "largeCitiesPct": "3.0",
+    "smallCitiesPct": "96.6"
+  },
+  "Armenia": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 2,
+    "totalCities": 3,
+    "largeCitiesPct": "33.3",
+    "smallCitiesPct": "66.7"
+  },
+  "Barbados": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Belgium": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 15,
+    "totalCities": 16,
+    "largeCitiesPct": "6.3",
+    "smallCitiesPct": "93.8"
+  },
+  "Bhutan": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 2,
+    "totalCities": 2,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Bolivia": {
+    "megaCities": 0,
+    "largeCities": 3,
+    "smallCities": 9,
+    "totalCities": 12,
+    "largeCitiesPct": "25.0",
+    "smallCitiesPct": "75.0"
+  },
+  "Bosnia and Herzegovina": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 4,
+    "totalCities": 4,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Botswana": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 4,
+    "totalCities": 4,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Brazil": {
+    "megaCities": 1,
+    "largeCities": 19,
+    "smallCities": 336,
+    "totalCities": 356,
+    "largeCitiesPct": "5.3",
+    "smallCitiesPct": "94.4"
+  },
+  "Belize": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Solomon Islands": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Brunei Darussalam": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 2,
+    "totalCities": 2,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Bulgaria": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 7,
+    "totalCities": 8,
+    "largeCitiesPct": "12.5",
+    "smallCitiesPct": "87.5"
+  },
+  "Myanmar": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 123,
+    "totalCities": 125,
+    "largeCitiesPct": "1.6",
+    "smallCitiesPct": "98.4"
+  },
+  "Burundi": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 11,
+    "totalCities": 12,
+    "largeCitiesPct": "8.3",
+    "smallCitiesPct": "91.7"
+  },
+  "Belarus": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 13,
+    "totalCities": 14,
+    "largeCitiesPct": "7.1",
+    "smallCitiesPct": "92.9"
+  },
+  "Cambodia": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 9,
+    "totalCities": 10,
+    "largeCitiesPct": "10.0",
+    "smallCitiesPct": "90.0"
+  },
+  "Cameroon": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 42,
+    "totalCities": 44,
+    "largeCitiesPct": "4.5",
+    "smallCitiesPct": "95.5"
+  },
+  "Canada": {
+    "megaCities": 0,
+    "largeCities": 4,
+    "smallCities": 52,
+    "totalCities": 56,
+    "largeCitiesPct": "7.1",
+    "smallCitiesPct": "92.9"
+  },
+  "Cabo Verde": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 2,
+    "totalCities": 2,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Central African Republic": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 5,
+    "totalCities": 6,
+    "largeCitiesPct": "16.7",
+    "smallCitiesPct": "83.3"
+  },
+  "Sri Lanka": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 23,
+    "totalCities": 24,
+    "largeCitiesPct": "4.2",
+    "smallCitiesPct": "95.8"
+  },
+  "Chad": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 36,
+    "totalCities": 37,
+    "largeCitiesPct": "2.7",
+    "smallCitiesPct": "97.3"
+  },
+  "Chile": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 35,
+    "totalCities": 36,
+    "largeCitiesPct": "2.8",
+    "smallCitiesPct": "97.2"
+  },
+  "China": {
+    "megaCities": 4,
+    "largeCities": 69,
+    "smallCities": 1983,
+    "totalCities": 2056,
+    "largeCitiesPct": "3.4",
+    "smallCitiesPct": "96.4"
+  },
+  "China, Taiwan Province of China": {
+    "megaCities": 0,
+    "largeCities": 3,
+    "smallCities": 18,
+    "totalCities": 21,
+    "largeCitiesPct": "14.3",
+    "smallCitiesPct": "85.7"
+  },
+  "Colombia": {
+    "megaCities": 1,
+    "largeCities": 4,
+    "smallCities": 76,
+    "totalCities": 81,
+    "largeCitiesPct": "4.9",
+    "smallCitiesPct": "93.8"
+  },
+  "Comoros": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 2,
+    "totalCities": 2,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Mayotte": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Congo": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 2,
+    "totalCities": 4,
+    "largeCitiesPct": "50.0",
+    "smallCitiesPct": "50.0"
+  },
+  "Democratic Republic of the Congo": {
+    "megaCities": 1,
+    "largeCities": 5,
+    "smallCities": 217,
+    "totalCities": 223,
+    "largeCitiesPct": "2.2",
+    "smallCitiesPct": "97.3"
+  },
+  "Costa Rica": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 5,
+    "totalCities": 6,
+    "largeCitiesPct": "16.7",
+    "smallCitiesPct": "83.3"
+  },
+  "Croatia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 5,
+    "totalCities": 5,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Cuba": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 26,
+    "totalCities": 27,
+    "largeCitiesPct": "3.7",
+    "smallCitiesPct": "96.3"
+  },
+  "Cyprus": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 4,
+    "totalCities": 4,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Czechia": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 11,
+    "totalCities": 12,
+    "largeCitiesPct": "8.3",
+    "smallCitiesPct": "91.7"
+  },
+  "Benin": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 28,
+    "totalCities": 29,
+    "largeCitiesPct": "3.4",
+    "smallCitiesPct": "96.6"
+  },
+  "Denmark": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 4,
+    "totalCities": 5,
+    "largeCitiesPct": "20.0",
+    "smallCitiesPct": "80.0"
+  },
+  "Dominican Republic": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 16,
+    "totalCities": 17,
+    "largeCitiesPct": "5.9",
+    "smallCitiesPct": "94.1"
+  },
+  "Ecuador": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 30,
+    "totalCities": 32,
+    "largeCitiesPct": "6.3",
+    "smallCitiesPct": "93.8"
+  },
+  "El Salvador": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 11,
+    "totalCities": 12,
+    "largeCitiesPct": "8.3",
+    "smallCitiesPct": "91.7"
+  },
+  "Equatorial Guinea": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 2,
+    "totalCities": 2,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Ethiopia": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 258,
+    "totalCities": 259,
+    "largeCitiesPct": "0.4",
+    "smallCitiesPct": "99.6"
+  },
+  "Eritrea": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 10,
+    "totalCities": 10,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Estonia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 2,
+    "totalCities": 2,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Fiji": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 2,
+    "totalCities": 2,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Finland": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 5,
+    "totalCities": 6,
+    "largeCitiesPct": "16.7",
+    "smallCitiesPct": "83.3"
+  },
+  "France": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 69,
+    "totalCities": 71,
+    "largeCitiesPct": "2.8",
+    "smallCitiesPct": "97.2"
+  },
+  "French Guiana": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "French Polynesia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Djibouti": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 4,
+    "totalCities": 4,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Gabon": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 6,
+    "totalCities": 6,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Georgia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 5,
+    "totalCities": 5,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Gambia": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 3,
+    "totalCities": 4,
+    "largeCitiesPct": "25.0",
+    "smallCitiesPct": "75.0"
+  },
+  "State of Palestine": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 11,
+    "totalCities": 13,
+    "largeCitiesPct": "15.4",
+    "smallCitiesPct": "84.6"
+  },
+  "Germany": {
+    "megaCities": 0,
+    "largeCities": 5,
+    "smallCities": 94,
+    "totalCities": 99,
+    "largeCitiesPct": "5.1",
+    "smallCitiesPct": "94.9"
+  },
+  "Ghana": {
+    "megaCities": 0,
+    "largeCities": 3,
+    "smallCities": 55,
+    "totalCities": 58,
+    "largeCitiesPct": "5.2",
+    "smallCitiesPct": "94.8"
+  },
+  "Gibraltar": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Greece": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 7,
+    "totalCities": 8,
+    "largeCitiesPct": "12.5",
+    "smallCitiesPct": "87.5"
+  },
+  "Guatemala": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 30,
+    "totalCities": 31,
+    "largeCitiesPct": "3.2",
+    "smallCitiesPct": "96.8"
+  },
+  "Guinea": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 23,
+    "totalCities": 24,
+    "largeCitiesPct": "4.2",
+    "smallCitiesPct": "95.8"
+  },
+  "Guyana": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 2,
+    "totalCities": 2,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Haiti": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 20,
+    "totalCities": 21,
+    "largeCitiesPct": "4.8",
+    "smallCitiesPct": "95.2"
+  },
+  "Honduras": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 14,
+    "totalCities": 16,
+    "largeCitiesPct": "12.5",
+    "smallCitiesPct": "87.5"
+  },
+  "China, Hong Kong SAR": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 4,
+    "totalCities": 6,
+    "largeCitiesPct": "33.3",
+    "smallCitiesPct": "66.7"
+  },
+  "Hungary": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 12,
+    "totalCities": 13,
+    "largeCitiesPct": "7.7",
+    "smallCitiesPct": "92.3"
+  },
+  "Iceland": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "India": {
+    "megaCities": 6,
+    "largeCities": 76,
+    "smallCities": 1972,
+    "totalCities": 2054,
+    "largeCitiesPct": "3.7",
+    "smallCitiesPct": "96.0"
+  },
+  "Indonesia": {
+    "megaCities": 1,
+    "largeCities": 21,
+    "smallCities": 365,
+    "totalCities": 387,
+    "largeCitiesPct": "5.4",
+    "smallCitiesPct": "94.3"
+  },
+  "Iran (Islamic Republic of)": {
+    "megaCities": 0,
+    "largeCities": 7,
+    "smallCities": 203,
+    "totalCities": 210,
+    "largeCitiesPct": "3.3",
+    "smallCitiesPct": "96.7"
+  },
+  "Iraq": {
+    "megaCities": 0,
+    "largeCities": 8,
+    "smallCities": 80,
+    "totalCities": 88,
+    "largeCitiesPct": "9.1",
+    "smallCitiesPct": "90.9"
+  },
+  "Ireland": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 4,
+    "totalCities": 5,
+    "largeCitiesPct": "20.0",
+    "smallCitiesPct": "80.0"
+  },
+  "Israel": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 24,
+    "totalCities": 25,
+    "largeCitiesPct": "4.0",
+    "smallCitiesPct": "96.0"
+  },
+  "Italy": {
+    "megaCities": 0,
+    "largeCities": 4,
+    "smallCities": 89,
+    "totalCities": 93,
+    "largeCitiesPct": "4.3",
+    "smallCitiesPct": "95.7"
+  },
+  "Côte d'Ivoire": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 46,
+    "totalCities": 47,
+    "largeCitiesPct": "2.1",
+    "smallCitiesPct": "97.9"
+  },
+  "Jamaica": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 6,
+    "totalCities": 6,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Japan": {
+    "megaCities": 2,
+    "largeCities": 7,
+    "smallCities": 126,
+    "totalCities": 135,
+    "largeCitiesPct": "5.2",
+    "smallCitiesPct": "93.3"
+  },
+  "Kazakhstan": {
+    "megaCities": 0,
+    "largeCities": 3,
+    "smallCities": 31,
+    "totalCities": 34,
+    "largeCitiesPct": "8.8",
+    "smallCitiesPct": "91.2"
+  },
+  "Jordan": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 14,
+    "totalCities": 15,
+    "largeCitiesPct": "6.7",
+    "smallCitiesPct": "93.3"
+  },
+  "Kenya": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 48,
+    "totalCities": 50,
+    "largeCitiesPct": "4.0",
+    "smallCitiesPct": "96.0"
+  },
+  "Dem. People's Rep. of Korea": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 103,
+    "totalCities": 104,
+    "largeCitiesPct": "1.0",
+    "smallCitiesPct": "99.0"
+  },
+  "Republic of Korea": {
+    "megaCities": 1,
+    "largeCities": 4,
+    "smallCities": 44,
+    "totalCities": 49,
+    "largeCitiesPct": "8.2",
+    "smallCitiesPct": "89.8"
+  },
+  "Kosovo (under UNSC res. 1244)": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 6,
+    "totalCities": 6,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Kuwait": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 1,
+    "totalCities": 2,
+    "largeCitiesPct": "50.0",
+    "smallCitiesPct": "50.0"
+  },
+  "Kyrgyzstan": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 11,
+    "totalCities": 12,
+    "largeCitiesPct": "8.3",
+    "smallCitiesPct": "91.7"
+  },
+  "Lao People's Democratic Republic": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 3,
+    "totalCities": 3,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Lebanon": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 8,
+    "totalCities": 9,
+    "largeCitiesPct": "11.1",
+    "smallCitiesPct": "88.9"
+  },
+  "Lesotho": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Latvia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 3,
+    "totalCities": 3,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Liberia": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 8,
+    "totalCities": 9,
+    "largeCitiesPct": "11.1",
+    "smallCitiesPct": "88.9"
+  },
+  "Libya": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 13,
+    "totalCities": 14,
+    "largeCitiesPct": "7.1",
+    "smallCitiesPct": "92.9"
+  },
+  "Lithuania": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 4,
+    "totalCities": 4,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Luxembourg": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "China, Macao SAR": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 0,
+    "totalCities": 1,
+    "largeCitiesPct": "100.0",
+    "smallCitiesPct": "0.0"
+  },
+  "Madagascar": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 23,
+    "totalCities": 24,
+    "largeCitiesPct": "4.2",
+    "smallCitiesPct": "95.8"
+  },
+  "Malawi": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 7,
+    "totalCities": 7,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Malaysia": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 40,
+    "totalCities": 42,
+    "largeCitiesPct": "4.8",
+    "smallCitiesPct": "95.2"
+  },
+  "Maldives": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Mali": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 19,
+    "totalCities": 20,
+    "largeCitiesPct": "5.0",
+    "smallCitiesPct": "95.0"
+  },
+  "Malta": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Martinique": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Mauritania": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 5,
+    "totalCities": 6,
+    "largeCitiesPct": "16.7",
+    "smallCitiesPct": "83.3"
+  },
+  "Mauritius": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Mexico": {
+    "megaCities": 1,
+    "largeCities": 8,
+    "smallCities": 177,
+    "totalCities": 186,
+    "largeCitiesPct": "4.3",
+    "smallCitiesPct": "95.2"
+  },
+  "Monaco": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Mongolia": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 1,
+    "totalCities": 2,
+    "largeCitiesPct": "50.0",
+    "smallCitiesPct": "50.0"
+  },
+  "Republic of Moldova": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 4,
+    "totalCities": 4,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Montenegro": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 2,
+    "totalCities": 2,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Morocco": {
+    "megaCities": 0,
+    "largeCities": 5,
+    "smallCities": 68,
+    "totalCities": 73,
+    "largeCitiesPct": "6.8",
+    "smallCitiesPct": "93.2"
+  },
+  "Mozambique": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 47,
+    "totalCities": 48,
+    "largeCitiesPct": "2.1",
+    "smallCitiesPct": "97.9"
+  },
+  "Oman": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 12,
+    "totalCities": 12,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Namibia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 4,
+    "totalCities": 4,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Nepal": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 18,
+    "totalCities": 19,
+    "largeCitiesPct": "5.3",
+    "smallCitiesPct": "94.7"
+  },
+  "Netherlands": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 42,
+    "totalCities": 44,
+    "largeCitiesPct": "4.5",
+    "smallCitiesPct": "95.5"
+  },
+  "Curaçao": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "New Caledonia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Vanuatu": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "New Zealand": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 9,
+    "totalCities": 10,
+    "largeCitiesPct": "10.0",
+    "smallCitiesPct": "90.0"
+  },
+  "Nicaragua": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 11,
+    "totalCities": 12,
+    "largeCitiesPct": "8.3",
+    "smallCitiesPct": "91.7"
+  },
+  "Niger": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 34,
+    "totalCities": 35,
+    "largeCitiesPct": "2.9",
+    "smallCitiesPct": "97.1"
+  },
+  "Nigeria": {
+    "megaCities": 1,
+    "largeCities": 16,
+    "smallCities": 440,
+    "totalCities": 457,
+    "largeCitiesPct": "3.5",
+    "smallCitiesPct": "96.3"
+  },
+  "Norway": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 9,
+    "totalCities": 9,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Pakistan": {
+    "megaCities": 2,
+    "largeCities": 11,
+    "smallCities": 310,
+    "totalCities": 323,
+    "largeCitiesPct": "3.4",
+    "smallCitiesPct": "96.0"
+  },
+  "Panama": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 4,
+    "totalCities": 5,
+    "largeCitiesPct": "20.0",
+    "smallCitiesPct": "80.0"
+  },
+  "Papua New Guinea": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 11,
+    "totalCities": 11,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Paraguay": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 8,
+    "totalCities": 9,
+    "largeCitiesPct": "11.1",
+    "smallCitiesPct": "88.9"
+  },
+  "Peru": {
+    "megaCities": 1,
+    "largeCities": 0,
+    "smallCities": 42,
+    "totalCities": 43,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "97.7"
+  },
+  "Philippines": {
+    "megaCities": 1,
+    "largeCities": 3,
+    "smallCities": 110,
+    "totalCities": 114,
+    "largeCitiesPct": "2.6",
+    "smallCitiesPct": "96.5"
+  },
+  "Poland": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 57,
+    "totalCities": 58,
+    "largeCitiesPct": "1.7",
+    "smallCitiesPct": "98.3"
+  },
+  "Portugal": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 8,
+    "totalCities": 9,
+    "largeCitiesPct": "11.1",
+    "smallCitiesPct": "88.9"
+  },
+  "Guinea-Bissau": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 3,
+    "totalCities": 3,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Timor-Leste": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Puerto Rico": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 4,
+    "totalCities": 4,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Qatar": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 4,
+    "totalCities": 5,
+    "largeCitiesPct": "20.0",
+    "smallCitiesPct": "80.0"
+  },
+  "Réunion": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 4,
+    "totalCities": 4,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Romania": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 28,
+    "totalCities": 29,
+    "largeCitiesPct": "3.4",
+    "smallCitiesPct": "96.6"
+  },
+  "Russia": {
+    "megaCities": 1,
+    "largeCities": 6,
+    "smallCities": 244,
+    "totalCities": 251,
+    "largeCitiesPct": "2.4",
+    "smallCitiesPct": "97.2"
+  },
+  "Rwanda": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 4,
+    "totalCities": 5,
+    "largeCitiesPct": "20.0",
+    "smallCitiesPct": "80.0"
+  },
+  "Sao Tome and Principe": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Saudi Arabia": {
+    "megaCities": 0,
+    "largeCities": 5,
+    "smallCities": 39,
+    "totalCities": 44,
+    "largeCitiesPct": "11.4",
+    "smallCitiesPct": "88.6"
+  },
+  "Senegal": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 24,
+    "totalCities": 26,
+    "largeCitiesPct": "7.7",
+    "smallCitiesPct": "92.3"
+  },
+  "Serbia": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 12,
+    "totalCities": 13,
+    "largeCitiesPct": "7.7",
+    "smallCitiesPct": "92.3"
+  },
+  "Sierra Leone": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 10,
+    "totalCities": 11,
+    "largeCitiesPct": "9.1",
+    "smallCitiesPct": "90.9"
+  },
+  "Singapore": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 1,
+    "totalCities": 2,
+    "largeCitiesPct": "50.0",
+    "smallCitiesPct": "50.0"
+  },
+  "Slovakia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 7,
+    "totalCities": 7,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Viet Nam": {
+    "megaCities": 1,
+    "largeCities": 4,
+    "smallCities": 130,
+    "totalCities": 135,
+    "largeCitiesPct": "3.0",
+    "smallCitiesPct": "96.3"
+  },
+  "Slovenia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 2,
+    "totalCities": 2,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Somalia": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 51,
+    "totalCities": 53,
+    "largeCitiesPct": "3.8",
+    "smallCitiesPct": "96.2"
+  },
+  "South Africa": {
+    "megaCities": 0,
+    "largeCities": 6,
+    "smallCities": 89,
+    "totalCities": 95,
+    "largeCitiesPct": "6.3",
+    "smallCitiesPct": "93.7"
+  },
+  "Zimbabwe": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 14,
+    "totalCities": 15,
+    "largeCitiesPct": "6.7",
+    "smallCitiesPct": "93.3"
+  },
+  "Spain": {
+    "megaCities": 0,
+    "largeCities": 3,
+    "smallCities": 80,
+    "totalCities": 83,
+    "largeCitiesPct": "3.6",
+    "smallCitiesPct": "96.4"
+  },
+  "South Sudan": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 25,
+    "totalCities": 25,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Sudan": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 104,
+    "totalCities": 105,
+    "largeCitiesPct": "1.0",
+    "smallCitiesPct": "99.0"
+  },
+  "Western Sahara": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 4,
+    "totalCities": 4,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Suriname": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Eswatini": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Sweden": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 16,
+    "totalCities": 17,
+    "largeCitiesPct": "5.9",
+    "smallCitiesPct": "94.1"
+  },
+  "Switzerland": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 17,
+    "totalCities": 17,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Syrian Arab Republic": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 35,
+    "totalCities": 37,
+    "largeCitiesPct": "5.4",
+    "smallCitiesPct": "94.6"
+  },
+  "Tajikistan": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 24,
+    "totalCities": 25,
+    "largeCitiesPct": "4.0",
+    "smallCitiesPct": "96.0"
+  },
+  "Thailand": {
+    "megaCities": 1,
+    "largeCities": 0,
+    "smallCities": 54,
+    "totalCities": 55,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "98.2"
+  },
+  "Togo": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 16,
+    "totalCities": 17,
+    "largeCitiesPct": "5.9",
+    "smallCitiesPct": "94.1"
+  },
+  "Trinidad and Tobago": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 3,
+    "totalCities": 3,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "United Arab Emirates": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 13,
+    "totalCities": 15,
+    "largeCitiesPct": "13.3",
+    "smallCitiesPct": "86.7"
+  },
+  "Tunisia": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 23,
+    "totalCities": 24,
+    "largeCitiesPct": "4.2",
+    "smallCitiesPct": "95.8"
+  },
+  "Türkiye": {
+    "megaCities": 1,
+    "largeCities": 6,
+    "smallCities": 170,
+    "totalCities": 177,
+    "largeCitiesPct": "3.4",
+    "smallCitiesPct": "96.0"
+  },
+  "Turkmenistan": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 10,
+    "totalCities": 11,
+    "largeCitiesPct": "9.1",
+    "smallCitiesPct": "90.9"
+  },
+  "Uganda": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 26,
+    "totalCities": 26,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Ukraine": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 77,
+    "totalCities": 79,
+    "largeCitiesPct": "2.5",
+    "smallCitiesPct": "97.5"
+  },
+  "North Macedonia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 4,
+    "totalCities": 4,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Egypt": {
+    "megaCities": 1,
+    "largeCities": 9,
+    "smallCities": 209,
+    "totalCities": 219,
+    "largeCitiesPct": "4.1",
+    "smallCitiesPct": "95.4"
+  },
+  "United Kingdom": {
+    "megaCities": 1,
+    "largeCities": 4,
+    "smallCities": 145,
+    "totalCities": 150,
+    "largeCitiesPct": "2.7",
+    "smallCitiesPct": "96.7"
+  },
+  "Jersey": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "United Republic of Tanzania": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 43,
+    "totalCities": 44,
+    "largeCitiesPct": "2.3",
+    "smallCitiesPct": "97.7"
+  },
+  "United States": {
+    "megaCities": 2,
+    "largeCities": 22,
+    "smallCities": 324,
+    "totalCities": 348,
+    "largeCitiesPct": "6.3",
+    "smallCitiesPct": "93.1"
+  },
+  "Burkina Faso": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 26,
+    "totalCities": 28,
+    "largeCitiesPct": "7.1",
+    "smallCitiesPct": "92.9"
+  },
+  "Uruguay": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 6,
+    "totalCities": 7,
+    "largeCitiesPct": "14.3",
+    "smallCitiesPct": "85.7"
+  },
+  "Uzbekistan": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 75,
+    "totalCities": 76,
+    "largeCitiesPct": "1.3",
+    "smallCitiesPct": "98.7"
+  },
+  "Venezuela": {
+    "megaCities": 0,
+    "largeCities": 3,
+    "smallCities": 66,
+    "totalCities": 69,
+    "largeCitiesPct": "4.3",
+    "smallCitiesPct": "95.7"
+  },
+  "Yemen": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 109,
+    "totalCities": 111,
+    "largeCitiesPct": "1.8",
+    "smallCitiesPct": "98.2"
+  },
+  "Zambia": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 32,
+    "totalCities": 33,
+    "largeCitiesPct": "3.0",
+    "smallCitiesPct": "97.0"
+  },
+  "World": {
+    "megaCities": 34,
+    "largeCities": 485,
+    "smallCities": 11571,
+    "totalCities": 12090,
+    "largeCitiesPct": "4.0",
+    "smallCitiesPct": "95.7"
+  },
+  "Developed regions": {
+    "megaCities": 6,
+    "largeCities": 81,
+    "smallCities": 1663,
+    "totalCities": 1750,
+    "largeCitiesPct": "4.6",
+    "smallCitiesPct": "95.0"
+  },
+  "Developing regions": {
+    "megaCities": 28,
+    "largeCities": 404,
+    "smallCities": 9908,
+    "totalCities": 10340,
+    "largeCitiesPct": "3.9",
+    "smallCitiesPct": "95.8"
+  },
+  "Africa": {
+    "megaCities": 4,
+    "largeCities": 87,
+    "smallCities": 2344,
+    "totalCities": 2435,
+    "largeCitiesPct": "3.6",
+    "smallCitiesPct": "96.3"
+  },
+  "Latin America and the Caribbean": {
+    "megaCities": 10,
+    "largeCities": 110,
+    "smallCities": 2034,
+    "totalCities": 2154,
+    "largeCitiesPct": "5.1",
+    "smallCitiesPct": "94.4"
+  },
+  "Northern America": {
+    "megaCities": 2,
+    "largeCities": 26,
+    "smallCities": 376,
+    "totalCities": 404,
+    "largeCitiesPct": "6.4",
+    "smallCitiesPct": "93.1"
+  },
+  "Eastern Asia": {
+    "megaCities": 7,
+    "largeCities": 88,
+    "smallCities": 2279,
+    "totalCities": 2374,
+    "largeCitiesPct": "3.7",
+    "smallCitiesPct": "96.0"
+  },
+  "Europe": {
+    "megaCities": 2,
+    "largeCities": 43,
+    "smallCities": 1127,
+    "totalCities": 1172,
+    "largeCitiesPct": "3.7",
+    "smallCitiesPct": "96.2"
+  },
+  "Oceania": {
+    "megaCities": 0,
+    "largeCities": 5,
+    "smallCities": 51,
+    "totalCities": 56,
+    "largeCitiesPct": "8.9",
+    "smallCitiesPct": "91.1"
+  },
+  "Eastern Africa": {
+    "megaCities": 0,
+    "largeCities": 15,
+    "smallCities": 611,
+    "totalCities": 626,
+    "largeCitiesPct": "2.4",
+    "smallCitiesPct": "97.6"
+  },
+  "Middle Africa": {
+    "megaCities": 2,
+    "largeCities": 14,
+    "smallCities": 364,
+    "totalCities": 380,
+    "largeCitiesPct": "3.7",
+    "smallCitiesPct": "95.8"
+  },
+  "Northern Africa": {
+    "megaCities": 1,
+    "largeCities": 19,
+    "smallCities": 528,
+    "totalCities": 548,
+    "largeCitiesPct": "3.5",
+    "smallCitiesPct": "96.4"
+  },
+  "Southern Africa": {
+    "megaCities": 0,
+    "largeCities": 6,
+    "smallCities": 99,
+    "totalCities": 105,
+    "largeCitiesPct": "5.7",
+    "smallCitiesPct": "94.3"
+  },
+  "Western Africa": {
+    "megaCities": 1,
+    "largeCities": 33,
+    "smallCities": 742,
+    "totalCities": 776,
+    "largeCitiesPct": "4.3",
+    "smallCitiesPct": "95.6"
+  },
+  "Caribbean": {
+    "megaCities": 0,
+    "largeCities": 3,
+    "smallCities": 79,
+    "totalCities": 82,
+    "largeCitiesPct": "3.7",
+    "smallCitiesPct": "96.3"
+  },
+  "Central America": {
+    "megaCities": 1,
+    "largeCities": 15,
+    "smallCities": 253,
+    "totalCities": 269,
+    "largeCitiesPct": "5.6",
+    "smallCitiesPct": "94.1"
+  },
+  "South-Eastern Asia": {
+    "megaCities": 4,
+    "largeCities": 34,
+    "smallCities": 838,
+    "totalCities": 876,
+    "largeCitiesPct": "3.9",
+    "smallCitiesPct": "95.7"
+  },
+  "Western Asia": {
+    "megaCities": 1,
+    "largeCities": 35,
+    "smallCities": 552,
+    "totalCities": 588,
+    "largeCitiesPct": "6.0",
+    "smallCitiesPct": "93.9"
+  },
+  "Eastern Europe": {
+    "megaCities": 1,
+    "largeCities": 14,
+    "smallCities": 460,
+    "totalCities": 475,
+    "largeCitiesPct": "2.9",
+    "smallCitiesPct": "96.8"
+  },
+  "Northern Europe": {
+    "megaCities": 1,
+    "largeCities": 8,
+    "smallCities": 194,
+    "totalCities": 203,
+    "largeCitiesPct": "3.9",
+    "smallCitiesPct": "95.6"
+  },
+  "Southern Europe": {
+    "megaCities": 0,
+    "largeCities": 10,
+    "smallCities": 227,
+    "totalCities": 237,
+    "largeCitiesPct": "4.2",
+    "smallCitiesPct": "95.8"
+  },
+  "Western Europe": {
+    "megaCities": 0,
+    "largeCities": 11,
+    "smallCities": 246,
+    "totalCities": 257,
+    "largeCitiesPct": "4.3",
+    "smallCitiesPct": "95.7"
+  },
+  "Australia/New Zealand": {
+    "megaCities": 0,
+    "largeCities": 10,
+    "smallCities": 68,
+    "totalCities": 78,
+    "largeCitiesPct": "12.8",
+    "smallCitiesPct": "87.2"
+  },
+  "Melanesia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 16,
+    "totalCities": 16,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "South America": {
+    "megaCities": 4,
+    "largeCities": 37,
+    "smallCities": 685,
+    "totalCities": 726,
+    "largeCitiesPct": "5.1",
+    "smallCitiesPct": "94.4"
+  },
+  "Less developed regions, excluding least developed countries": {
+    "megaCities": 25,
+    "largeCities": 352,
+    "smallCities": 8159,
+    "totalCities": 8536,
+    "largeCitiesPct": "4.1",
+    "smallCitiesPct": "95.6"
+  },
+  "Asia": {
+    "megaCities": 21,
+    "largeCities": 269,
+    "smallCities": 6656,
+    "totalCities": 6946,
+    "largeCitiesPct": "3.9",
+    "smallCitiesPct": "95.8"
+  },
+  "Least developed countries": {
+    "megaCities": 3,
+    "largeCities": 52,
+    "smallCities": 1749,
+    "totalCities": 1804,
+    "largeCitiesPct": "2.9",
+    "smallCitiesPct": "97.0"
+  },
+  "Sub-Saharan Africa": {
+    "megaCities": 3,
+    "largeCities": 68,
+    "smallCities": 1816,
+    "totalCities": 1887,
+    "largeCitiesPct": "3.6",
+    "smallCitiesPct": "96.2"
+  },
+  "Developing regions, excluding China": {
+    "megaCities": 24,
+    "largeCities": 329,
+    "smallCities": 7903,
+    "totalCities": 8256,
+    "largeCitiesPct": "4.0",
+    "smallCitiesPct": "95.7"
+  },
+  "Polynesia": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Small island developing States (SIDS)": {
+    "megaCities": 0,
+    "largeCities": 4,
+    "smallCities": 112,
+    "totalCities": 116,
+    "largeCitiesPct": "3.4",
+    "smallCitiesPct": "96.6"
+  },
+  "Land-locked Developing Countries (LLDC)": {
+    "megaCities": 0,
+    "largeCities": 30,
+    "smallCities": 809,
+    "totalCities": 839,
+    "largeCitiesPct": "3.6",
+    "smallCitiesPct": "96.4"
+  },
+  "Low-income countries": {
+    "megaCities": 1,
+    "largeCities": 32,
+    "smallCities": 1273,
+    "totalCities": 1306,
+    "largeCitiesPct": "2.5",
+    "smallCitiesPct": "97.5"
+  },
+  "Lower-middle-income countries": {
+    "megaCities": 14,
+    "largeCities": 173,
+    "smallCities": 4301,
+    "totalCities": 4488,
+    "largeCitiesPct": "3.9",
+    "smallCitiesPct": "95.8"
+  },
+  "Upper-middle-income countries": {
+    "megaCities": 12,
+    "largeCities": 175,
+    "smallCities": 4160,
+    "totalCities": 4347,
+    "largeCitiesPct": "4.0",
+    "smallCitiesPct": "95.7"
+  },
+  "High-income countries": {
+    "megaCities": 7,
+    "largeCities": 102,
+    "smallCities": 1767,
+    "totalCities": 1876,
+    "largeCitiesPct": "5.4",
+    "smallCitiesPct": "94.2"
+  },
+  "Middle-income countries": {
+    "megaCities": 26,
+    "largeCities": 348,
+    "smallCities": 8461,
+    "totalCities": 8835,
+    "largeCitiesPct": "3.9",
+    "smallCitiesPct": "95.8"
+  },
+  "No income group available": {
+    "megaCities": 0,
+    "largeCities": 3,
+    "smallCities": 70,
+    "totalCities": 73,
+    "largeCitiesPct": "4.1",
+    "smallCitiesPct": "95.9"
+  },
+  "Europe and Northern America": {
+    "megaCities": 4,
+    "largeCities": 69,
+    "smallCities": 1503,
+    "totalCities": 1576,
+    "largeCitiesPct": "4.4",
+    "smallCitiesPct": "95.4"
+  },
+  "Central and Southern Asia": {
+    "megaCities": 9,
+    "largeCities": 112,
+    "smallCities": 2987,
+    "totalCities": 3108,
+    "largeCitiesPct": "3.6",
+    "smallCitiesPct": "96.1"
+  },
+  "Eastern and South-Eastern Asia": {
+    "megaCities": 11,
+    "largeCities": 122,
+    "smallCities": 3117,
+    "totalCities": 3250,
+    "largeCitiesPct": "3.8",
+    "smallCitiesPct": "95.9"
+  },
+  "Northern Africa and Western Asia": {
+    "megaCities": 2,
+    "largeCities": 54,
+    "smallCities": 1080,
+    "totalCities": 1136,
+    "largeCitiesPct": "4.8",
+    "smallCitiesPct": "95.1"
+  },
+  "Oceania (excluding Australia and New Zealand)": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 17,
+    "totalCities": 17,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Eastern and South-Eastern Asia, and Oceania (excluding Australia and New Zealand)": {
+    "megaCities": 11,
+    "largeCities": 122,
+    "smallCities": 3134,
+    "totalCities": 3267,
+    "largeCitiesPct": "3.7",
+    "smallCitiesPct": "95.9"
+  },
+  "Low-and-middle-income countries": {
+    "megaCities": 27,
+    "largeCities": 380,
+    "smallCities": 9734,
+    "totalCities": 10141,
+    "largeCitiesPct": "3.7",
+    "smallCitiesPct": "96.0"
+  },
+  "LLDC: Africa": {
+    "megaCities": 0,
+    "largeCities": 13,
+    "smallCities": 503,
+    "totalCities": 516,
+    "largeCitiesPct": "2.5",
+    "smallCitiesPct": "97.5"
+  },
+  "LLDC: Asia": {
+    "megaCities": 0,
+    "largeCities": 13,
+    "smallCities": 281,
+    "totalCities": 294,
+    "largeCitiesPct": "4.4",
+    "smallCitiesPct": "95.6"
+  },
+  "LLDC: Europe": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 8,
+    "totalCities": 8,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "LLDC: Latin America": {
+    "megaCities": 0,
+    "largeCities": 4,
+    "smallCities": 17,
+    "totalCities": 21,
+    "largeCitiesPct": "19.0",
+    "smallCitiesPct": "81.0"
+  },
+  "SIDS Caribbean": {
+    "megaCities": 0,
+    "largeCities": 3,
+    "smallCities": 83,
+    "totalCities": 86,
+    "largeCitiesPct": "3.5",
+    "smallCitiesPct": "96.5"
+  },
+  "SIDS Pacific": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 18,
+    "totalCities": 18,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "SIDS Atlantic, Indian Ocean and South China Sea (AIS)": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 11,
+    "totalCities": 12,
+    "largeCitiesPct": "8.3",
+    "smallCitiesPct": "91.7"
+  },
+  "Central Asia": {
+    "megaCities": 0,
+    "largeCities": 7,
+    "smallCities": 151,
+    "totalCities": 158,
+    "largeCitiesPct": "4.4",
+    "smallCitiesPct": "95.6"
+  },
+  "Southern Asia": {
+    "megaCities": 9,
+    "largeCities": 105,
+    "smallCities": 2836,
+    "totalCities": 2950,
+    "largeCitiesPct": "3.6",
+    "smallCitiesPct": "96.1"
+  },
+  "Europe, Northern America, Australia and New Zealand": {
+    "megaCities": 4,
+    "largeCities": 74,
+    "smallCities": 1537,
+    "totalCities": 1615,
+    "largeCitiesPct": "4.6",
+    "smallCitiesPct": "95.2"
+  },
+  "High-and-upper-middle-income countries": {
+    "megaCities": 19,
+    "largeCities": 277,
+    "smallCities": 5927,
+    "totalCities": 6223,
+    "largeCitiesPct": "4.5",
+    "smallCitiesPct": "95.2"
+  },
+  "Low-and-Lower-middle-income countries": {
+    "megaCities": 15,
+    "largeCities": 205,
+    "smallCities": 5574,
+    "totalCities": 5794,
+    "largeCitiesPct": "3.5",
+    "smallCitiesPct": "96.2"
+  },
+  "Americas": {
+    "megaCities": 7,
+    "largeCities": 81,
+    "smallCities": 1393,
+    "totalCities": 1481,
+    "largeCitiesPct": "5.5",
+    "smallCitiesPct": "94.1"
+  },
+  "Group A: Sub-Saharan Africa": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 1,
+    "totalCities": 1,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Group A: Northern Africa and Western Asia": {
+    "megaCities": 0,
+    "largeCities": 1,
+    "smallCities": 7,
+    "totalCities": 8,
+    "largeCitiesPct": "12.5",
+    "smallCitiesPct": "87.5"
+  },
+  "Group A: Eastern and South-Eastern Asia": {
+    "megaCities": 8,
+    "largeCities": 85,
+    "smallCities": 2229,
+    "totalCities": 2322,
+    "largeCitiesPct": "3.7",
+    "smallCitiesPct": "96.0"
+  },
+  "Group A: Latin America and the Caribbean": {
+    "megaCities": 0,
+    "largeCities": 2,
+    "smallCities": 44,
+    "totalCities": 46,
+    "largeCitiesPct": "4.3",
+    "smallCitiesPct": "95.7"
+  },
+  "Group A: Europe, Northern America, Australia and New Zealand": {
+    "megaCities": 1,
+    "largeCities": 30,
+    "smallCities": 795,
+    "totalCities": 826,
+    "largeCitiesPct": "3.6",
+    "smallCitiesPct": "96.2"
+  },
+  "Group B: Sub-Saharan Africa": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 6,
+    "totalCities": 6,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Group B: Northern Africa and Western Asia": {
+    "megaCities": 1,
+    "largeCities": 8,
+    "smallCities": 218,
+    "totalCities": 227,
+    "largeCitiesPct": "3.5",
+    "smallCitiesPct": "96.0"
+  },
+  "Group B: Central and Southern Asia": {
+    "megaCities": 0,
+    "largeCities": 8,
+    "smallCities": 228,
+    "totalCities": 236,
+    "largeCitiesPct": "3.4",
+    "smallCitiesPct": "96.6"
+  },
+  "Group B: Eastern and South-Eastern Asia": {
+    "megaCities": 1,
+    "largeCities": 9,
+    "smallCities": 357,
+    "totalCities": 367,
+    "largeCitiesPct": "2.5",
+    "smallCitiesPct": "97.3"
+  },
+  "Group B: Latin America and the Caribbean": {
+    "megaCities": 3,
+    "largeCities": 29,
+    "smallCities": 541,
+    "totalCities": 573,
+    "largeCitiesPct": "5.1",
+    "smallCitiesPct": "94.4"
+  },
+  "Group B: Oceania (excluding Australia and New Zealand)": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 3,
+    "totalCities": 3,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Group B: Europe, Northern America, Australia and New Zealand": {
+    "megaCities": 0,
+    "largeCities": 6,
+    "smallCities": 99,
+    "totalCities": 105,
+    "largeCitiesPct": "5.7",
+    "smallCitiesPct": "94.3"
+  },
+  "Group C: Sub-Saharan Africa": {
+    "megaCities": 3,
+    "largeCities": 68,
+    "smallCities": 1809,
+    "totalCities": 1880,
+    "largeCitiesPct": "3.6",
+    "smallCitiesPct": "96.2"
+  },
+  "Group C: Northern Africa and Western Asia": {
+    "megaCities": 1,
+    "largeCities": 45,
+    "smallCities": 855,
+    "totalCities": 901,
+    "largeCitiesPct": "5.0",
+    "smallCitiesPct": "94.9"
+  },
+  "Group C: Central and Southern Asia": {
+    "megaCities": 9,
+    "largeCities": 104,
+    "smallCities": 2759,
+    "totalCities": 2872,
+    "largeCitiesPct": "3.6",
+    "smallCitiesPct": "96.1"
+  },
+  "Group C: Eastern and South-Eastern Asia": {
+    "megaCities": 2,
+    "largeCities": 28,
+    "smallCities": 531,
+    "totalCities": 561,
+    "largeCitiesPct": "5.0",
+    "smallCitiesPct": "94.7"
+  },
+  "Group C: Latin America and the Caribbean": {
+    "megaCities": 2,
+    "largeCities": 24,
+    "smallCities": 432,
+    "totalCities": 458,
+    "largeCitiesPct": "5.2",
+    "smallCitiesPct": "94.3"
+  },
+  "Group C: Oceania (excluding Australia and New Zealand)": {
+    "megaCities": 0,
+    "largeCities": 0,
+    "smallCities": 14,
+    "totalCities": 14,
+    "largeCitiesPct": "0.0",
+    "smallCitiesPct": "100.0"
+  },
+  "Group C: Europe, Northern America, Australia and New Zealand": {
+    "megaCities": 3,
+    "largeCities": 38,
+    "smallCities": 643,
+    "totalCities": 684,
+    "largeCitiesPct": "5.6",
+    "smallCitiesPct": "94.0"
+  }
+}

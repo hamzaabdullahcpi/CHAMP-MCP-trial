@@ -1,0 +1,8 @@
+{
+  "name": "CHAMP Toolkit V6",
+  "description": "An interactive knowledge product for National Governments to implement Multilevel Governance for climate finance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

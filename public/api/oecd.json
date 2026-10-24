@@ -1,0 +1,1322 @@
+{
+  "Niger": {
+    "population": 24207,
+    "gdpPerCapita": "$1,288",
+    "averageMunicipalitySize": "94,928 pop.",
+    "urbPop": "16.6%",
+    "sngExpenditure": "0.8%",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Chad": {
+    "population": 16426,
+    "gdpPerCapita": "$1,602",
+    "averageMunicipalitySize": "39,109 pop.",
+    "urbPop": "23.5%",
+    "sngExpenditure": "2.1%",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Burkina Faso": {
+    "population": 20903,
+    "gdpPerCapita": "$2,274",
+    "averageMunicipalitySize": "59,553 pop.",
+    "urbPop": "30.6%",
+    "sngExpenditure": "5.8%",
+    "sngRevenue": "8.9%",
+    "sngDebt": "-",
+    "sngInvestment": "11.2%"
+  },
+  "Burundi": {
+    "population": 11891,
+    "gdpPerCapita": "$771",
+    "averageMunicipalitySize": "99,923 pop.",
+    "urbPop": "13.7%",
+    "sngExpenditure": "3.1%",
+    "sngRevenue": "4.7%",
+    "sngDebt": "-",
+    "sngInvestment": "9.2%"
+  },
+  "Gambia": {
+    "population": 2417,
+    "gdpPerCapita": "$2,275",
+    "averageMunicipalitySize": "1,208,332 pop.",
+    "urbPop": "62.6%",
+    "sngExpenditure": "2.0%",
+    "sngRevenue": "3.2%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Guinea": {
+    "population": 13133,
+    "gdpPerCapita": "$2,817",
+    "averageMunicipalitySize": "36,278 pop.",
+    "urbPop": "36.9%",
+    "sngExpenditure": "0.3%",
+    "sngRevenue": "0.3%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Liberia": {
+    "population": 5058,
+    "gdpPerCapita": "$1,468",
+    "averageMunicipalitySize": "210,737 pop.",
+    "urbPop": "52.1%",
+    "sngExpenditure": "-",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Madagascar": {
+    "population": 27691,
+    "gdpPerCapita": "$1,544",
+    "averageMunicipalitySize": "16,337 pop.",
+    "urbPop": "38.5%",
+    "sngExpenditure": "0.7%",
+    "sngRevenue": "1.3%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Malawi": {
+    "population": 19130,
+    "gdpPerCapita": "$1,592",
+    "averageMunicipalitySize": "546,570 pop.",
+    "urbPop": "17.4%",
+    "sngExpenditure": "13.6%",
+    "sngRevenue": "21.2%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Mali": {
+    "population": 20251,
+    "gdpPerCapita": "$2,348",
+    "averageMunicipalitySize": "27,001 pop.",
+    "urbPop": "43.9%",
+    "sngExpenditure": "10.5%",
+    "sngRevenue": "12.6%",
+    "sngDebt": "0.0%",
+    "sngInvestment": "7.1%"
+  },
+  "Mauritania": {
+    "population": 4650,
+    "gdpPerCapita": "$5,592",
+    "averageMunicipalitySize": "21,231 pop.",
+    "urbPop": "55.3%",
+    "sngExpenditure": "-",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Mozambique": {
+    "population": 31255,
+    "gdpPerCapita": "$1,297",
+    "averageMunicipalitySize": "589,725 pop.",
+    "urbPop": "37.1%",
+    "sngExpenditure": "12.8%",
+    "sngRevenue": "5.9%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Rwanda": {
+    "population": 12952,
+    "gdpPerCapita": "$2,214",
+    "averageMunicipalitySize": "462,579 pop.",
+    "urbPop": "17.4%",
+    "sngExpenditure": "18.2%",
+    "sngRevenue": "40.2%",
+    "sngDebt": "-",
+    "sngInvestment": "44.9%"
+  },
+  "Sierra Leone": {
+    "population": 7977,
+    "gdpPerCapita": "$1,727",
+    "averageMunicipalitySize": "362,590 pop.",
+    "urbPop": "42.9%",
+    "sngExpenditure": "2.1%",
+    "sngRevenue": "3.0%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Togo": {
+    "population": 8279,
+    "gdpPerCapita": "$2,223",
+    "averageMunicipalitySize": "70,758 pop.",
+    "urbPop": "42.8%",
+    "sngExpenditure": "1.3%",
+    "sngRevenue": "1.1%",
+    "sngDebt": "-",
+    "sngInvestment": "1.0%"
+  },
+  "Uganda": {
+    "population": 45741,
+    "gdpPerCapita": "$2,294",
+    "averageMunicipalitySize": "259,892 pop.",
+    "urbPop": "25.0%",
+    "sngExpenditure": "16.3%",
+    "sngRevenue": "21.1%",
+    "sngDebt": "0.0%",
+    "sngInvestment": "5.4%"
+  },
+  "Ethiopia": {
+    "population": 114964,
+    "gdpPerCapita": "$2,423",
+    "averageMunicipalitySize": "113,600 pop.",
+    "urbPop": "21.7%",
+    "sngExpenditure": "36.3%",
+    "sngRevenue": "55.3%",
+    "sngDebt": "-",
+    "sngInvestment": "34.8%"
+  },
+  "Somalia": {
+    "population": 15893,
+    "gdpPerCapita": "$1,246",
+    "averageMunicipalitySize": "162,176 pop.",
+    "urbPop": "46.1%",
+    "sngExpenditure": "19.8%",
+    "sngRevenue": "69.9%",
+    "sngDebt": "-",
+    "sngInvestment": "2.7%"
+  },
+  "Benin": {
+    "population": 12123,
+    "gdpPerCapita": "$3,505",
+    "averageMunicipalitySize": "157,444 pop.",
+    "urbPop": "48.4%",
+    "sngExpenditure": "3.2%",
+    "sngRevenue": "6.3%",
+    "sngDebt": "-",
+    "sngInvestment": "10.7%"
+  },
+  "Cabo Verde": {
+    "population": 556,
+    "gdpPerCapita": "$6,377",
+    "averageMunicipalitySize": "25,272 pop.",
+    "urbPop": "66.7%",
+    "sngExpenditure": "14.6%",
+    "sngRevenue": "20.1%",
+    "sngDebt": "0.4%",
+    "sngInvestment": "61.0%"
+  },
+  "Côte d’Ivoire": {
+    "population": 26378,
+    "gdpPerCapita": "$5,466",
+    "averageMunicipalitySize": "131,235 pop.",
+    "urbPop": "51.7%",
+    "sngExpenditure": "2.4%",
+    "sngRevenue": "3.4%",
+    "sngDebt": "0.2%",
+    "sngInvestment": "2.4%"
+  },
+  "Egypt": {
+    "population": 102334,
+    "gdpPerCapita": "$12,607",
+    "averageMunicipalitySize": "21,796 pop.",
+    "urbPop": "42.8%",
+    "sngExpenditure": "11.7%",
+    "sngRevenue": "2.7%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Ghana": {
+    "population": 31073,
+    "gdpPerCapita": "$5,744",
+    "averageMunicipalitySize": "119,053 pop.",
+    "urbPop": "57.4%",
+    "sngExpenditure": "1.7%",
+    "sngRevenue": "3.3%",
+    "sngDebt": "0.0%",
+    "sngInvestment": "0.8%"
+  },
+  "Kenya": {
+    "population": 53771,
+    "gdpPerCapita": "$4,578",
+    "averageMunicipalitySize": "911,378 pop.",
+    "urbPop": "28.0%",
+    "sngExpenditure": "15.5%",
+    "sngRevenue": "20.4%",
+    "sngDebt": "1.1%",
+    "sngInvestment": "80.3%"
+  },
+  "Morocco": {
+    "population": 36911,
+    "gdpPerCapita": "$7,369",
+    "averageMunicipalitySize": "23,999 pop.",
+    "urbPop": "63.5%",
+    "sngExpenditure": "11.7%",
+    "sngRevenue": "15.0%",
+    "sngDebt": "-",
+    "sngInvestment": "17.1%"
+  },
+  "Senegal": {
+    "population": 16744,
+    "gdpPerCapita": "$3,503",
+    "averageMunicipalitySize": "30,061 pop.",
+    "urbPop": "48.1%",
+    "sngExpenditure": "3.6%",
+    "sngRevenue": "5.1%",
+    "sngDebt": "-",
+    "sngInvestment": "4.5%"
+  },
+  "Tanzania": {
+    "population": 59734,
+    "gdpPerCapita": "$2,780",
+    "averageMunicipalitySize": "398,228 pop.",
+    "urbPop": "35.2%",
+    "sngExpenditure": "2.9%",
+    "sngRevenue": "3.7%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Tunisia": {
+    "population": 11819,
+    "gdpPerCapita": "$10,823",
+    "averageMunicipalitySize": "33,767 pop.",
+    "urbPop": "69.6%",
+    "sngExpenditure": "3.8%",
+    "sngRevenue": "4.7%",
+    "sngDebt": "-",
+    "sngInvestment": "13.0%"
+  },
+  "Zambia": {
+    "population": 18384,
+    "gdpPerCapita": "$3,458",
+    "averageMunicipalitySize": "158,482 pop.",
+    "urbPop": "44.6%",
+    "sngExpenditure": "-",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Zimbabwe": {
+    "population": 14863,
+    "gdpPerCapita": "$3,537",
+    "averageMunicipalitySize": "161,554 pop.",
+    "urbPop": "32.2%",
+    "sngExpenditure": "-",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Angola": {
+    "population": 32866,
+    "gdpPerCapita": "$6,445",
+    "averageMunicipalitySize": "200,404 pop.",
+    "urbPop": "66.8%",
+    "sngExpenditure": "3.6%",
+    "sngRevenue": "3.6%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Djibouti": {
+    "population": 988,
+    "gdpPerCapita": "$5,782",
+    "averageMunicipalitySize": "247,001 pop.",
+    "urbPop": "78.1%",
+    "sngExpenditure": "-",
+    "sngRevenue": "0.5%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Eswatini": {
+    "population": 1160,
+    "gdpPerCapita": "$8,866",
+    "averageMunicipalitySize": "17,061 pop.",
+    "urbPop": "24.2%",
+    "sngExpenditure": "1.8%",
+    "sngRevenue": "2.7%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Nigeria": {
+    "population": 206140,
+    "gdpPerCapita": "$5,186",
+    "averageMunicipalitySize": "266,330 pop.",
+    "urbPop": "52.0%",
+    "sngExpenditure": "38.6%",
+    "sngRevenue": "36.3%",
+    "sngDebt": "3.9%",
+    "sngInvestment": "62.3%"
+  },
+  "Namibia": {
+    "population": 2541,
+    "gdpPerCapita": "$9,298",
+    "averageMunicipalitySize": "44,577 pop.",
+    "urbPop": "52.0%",
+    "sngExpenditure": "-",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Botswana": {
+    "population": 2352,
+    "gdpPerCapita": "$15,458",
+    "averageMunicipalitySize": "146,977 pop.",
+    "urbPop": "70.9%",
+    "sngExpenditure": "-",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Mauritius": {
+    "population": 1266,
+    "gdpPerCapita": "$20,531",
+    "averageMunicipalitySize": "9,376 pop.",
+    "urbPop": "40.8%",
+    "sngExpenditure": "5.5%",
+    "sngRevenue": "7.9%",
+    "sngDebt": "0.0%",
+    "sngInvestment": "16.0%"
+  },
+  "Seychelles": {
+    "population": 98,
+    "gdpPerCapita": "$25,768",
+    "averageMunicipalitySize": "3,787 pop.",
+    "urbPop": "57.6%",
+    "sngExpenditure": "-",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "South Africa": {
+    "population": 59309,
+    "gdpPerCapita": "$13,361",
+    "averageMunicipalitySize": "230,773 pop.",
+    "urbPop": "67.4%",
+    "sngExpenditure": "52.9%",
+    "sngRevenue": "63.0%",
+    "sngDebt": "3.8%",
+    "sngInvestment": "69.5%"
+  },
+  "Australia": {
+    "population": 25687,
+    "gdpPerCapita": "$53,330",
+    "averageMunicipalitySize": "47,834 pop.",
+    "urbPop": "86.2%",
+    "sngExpenditure": "45.0%",
+    "sngRevenue": "47.3%",
+    "sngDebt": "26.6%",
+    "sngInvestment": "75.3%"
+  },
+  "Austria": {
+    "population": 9028,
+    "gdpPerCapita": "$55,684",
+    "averageMunicipalitySize": "4,313 pop.",
+    "urbPop": "58.7%",
+    "sngExpenditure": "33.1%",
+    "sngRevenue": "37.2%",
+    "sngDebt": "13.7%",
+    "sngInvestment": "40.4%"
+  },
+  "Belgium": {
+    "population": 11556,
+    "gdpPerCapita": "$53,035",
+    "averageMunicipalitySize": "19,890 pop.",
+    "urbPop": "98.1%",
+    "sngExpenditure": "49.0%",
+    "sngRevenue": "53.5%",
+    "sngDebt": "25.9%",
+    "sngInvestment": "78.4%"
+  },
+  "Chile": {
+    "population": 19116,
+    "gdpPerCapita": "$25,110",
+    "averageMunicipalitySize": "55,409 pop.",
+    "urbPop": "87.7%",
+    "sngExpenditure": "13.4%",
+    "sngRevenue": "18.5%",
+    "sngDebt": "-",
+    "sngInvestment": "10.9%"
+  },
+  "Germany": {
+    "population": 83237,
+    "gdpPerCapita": "$54,792",
+    "averageMunicipalitySize": "7,715 pop.",
+    "urbPop": "79.8%",
+    "sngExpenditure": "48.9%",
+    "sngRevenue": "51.9%",
+    "sngDebt": "25.5%",
+    "sngInvestment": "67.5%"
+  },
+  "Spain": {
+    "population": 47352,
+    "gdpPerCapita": "$37,766",
+    "averageMunicipalitySize": "5,824 pop.",
+    "urbPop": "80.8%",
+    "sngExpenditure": "47.3%",
+    "sngRevenue": "59.9%",
+    "sngDebt": "33.4%",
+    "sngInvestment": "67.1%"
+  },
+  "Sweden": {
+    "population": 10353,
+    "gdpPerCapita": "$55,038",
+    "averageMunicipalitySize": "35,702 pop.",
+    "urbPop": "88.0%",
+    "sngExpenditure": "48.7%",
+    "sngRevenue": "52.0%",
+    "sngDebt": "19.3%",
+    "sngInvestment": "48.0%"
+  },
+  "Switzerland": {
+    "population": 8637,
+    "gdpPerCapita": "$71,743",
+    "averageMunicipalitySize": "4,021 pop.",
+    "urbPop": "73.9%",
+    "sngExpenditure": "58.8%",
+    "sngRevenue": "62.1%",
+    "sngDebt": "21.9%",
+    "sngInvestment": "67.3%"
+  },
+  "Argentina": {
+    "population": 45377,
+    "gdpPerCapita": "$20,771",
+    "averageMunicipalitySize": "19,635 pop.",
+    "urbPop": "92.1%",
+    "sngExpenditure": "48.7%",
+    "sngRevenue": "43.7%",
+    "sngDebt": "-",
+    "sngInvestment": "72.6%"
+  },
+  "Armenia": {
+    "population": 2963,
+    "gdpPerCapita": "$13,312",
+    "averageMunicipalitySize": "6,122 pop.",
+    "urbPop": "63.3%",
+    "sngExpenditure": "7.2%",
+    "sngRevenue": "9.6%",
+    "sngDebt": "-",
+    "sngInvestment": "7.0%"
+  },
+  "Bolivia": {
+    "population": 11673,
+    "gdpPerCapita": "$8,275",
+    "averageMunicipalitySize": "34,332 pop.",
+    "urbPop": "70.1%",
+    "sngExpenditure": "22.5%",
+    "sngRevenue": "34.3%",
+    "sngDebt": "3.1%",
+    "sngInvestment": "64.5%"
+  },
+  "Brazil": {
+    "population": 212559,
+    "gdpPerCapita": "$14,835",
+    "averageMunicipalitySize": "38,161 pop.",
+    "urbPop": "87.1%",
+    "sngExpenditure": "36.5%",
+    "sngRevenue": "59.5%",
+    "sngDebt": "18.6%",
+    "sngInvestment": "83.9%"
+  },
+  "China (People’s Republic of)": {
+    "population": 1410929,
+    "gdpPerCapita": "$17,211",
+    "averageMunicipalitySize": "496,107 pop.",
+    "urbPop": "61.4%",
+    "sngExpenditure": "72.4%",
+    "sngRevenue": "79.4%",
+    "sngDebt": "20.6%",
+    "sngInvestment": "-"
+  },
+  "Dominican Republic": {
+    "population": 10848,
+    "gdpPerCapita": "$17,936",
+    "averageMunicipalitySize": "68,658 pop.",
+    "urbPop": "82.5%",
+    "sngExpenditure": "2.0%",
+    "sngRevenue": "3.0%",
+    "sngDebt": "-",
+    "sngInvestment": "3.9%"
+  },
+  "Ecuador": {
+    "population": 17643,
+    "gdpPerCapita": "$10,896",
+    "averageMunicipalitySize": "79,833 pop.",
+    "urbPop": "64.2%",
+    "sngExpenditure": "15.2%",
+    "sngRevenue": "15.0%",
+    "sngDebt": "-",
+    "sngInvestment": "63.2%"
+  },
+  "Honduras": {
+    "population": 9905,
+    "gdpPerCapita": "$5,420",
+    "averageMunicipalitySize": "33,237 pop.",
+    "urbPop": "58.4%",
+    "sngExpenditure": "7.6%",
+    "sngRevenue": "10.2%",
+    "sngDebt": "0.7%",
+    "sngInvestment": "18.9%"
+  },
+  "Indonesia": {
+    "population": 273524,
+    "gdpPerCapita": "$12,073",
+    "averageMunicipalitySize": "3,263 pop.",
+    "urbPop": "56.6%",
+    "sngExpenditure": "46.6%",
+    "sngRevenue": "66.8%",
+    "sngDebt": "0.4%",
+    "sngInvestment": "44.3%"
+  },
+  "Jordan": {
+    "population": 10203,
+    "gdpPerCapita": "$10,355",
+    "averageMunicipalitySize": "101,021 pop.",
+    "urbPop": "91.4%",
+    "sngExpenditure": "6.4%",
+    "sngRevenue": "6.4%",
+    "sngDebt": "1.9%",
+    "sngInvestment": "24.3%"
+  },
+  "Malaysia": {
+    "population": 32366,
+    "gdpPerCapita": "$27,924",
+    "averageMunicipalitySize": "214,344 pop.",
+    "urbPop": "77.2%",
+    "sngExpenditure": "12.4%",
+    "sngRevenue": "20.8%",
+    "sngDebt": "0.5%",
+    "sngInvestment": "7.2%"
+  },
+  "Malta": {
+    "population": 525,
+    "gdpPerCapita": "$41,741",
+    "averageMunicipalitySize": "7,725 pop.",
+    "urbPop": "94.7%",
+    "sngExpenditure": "1.1%",
+    "sngRevenue": "1.5%",
+    "sngDebt": "0.2%",
+    "sngInvestment": "2.1%"
+  },
+  "Myanmar": {
+    "population": 54410,
+    "gdpPerCapita": "$5,124",
+    "averageMunicipalitySize": "-",
+    "urbPop": "31.1%",
+    "sngExpenditure": "15.7%",
+    "sngRevenue": "28.3%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Nepal": {
+    "population": 29137,
+    "gdpPerCapita": "$4,009",
+    "averageMunicipalitySize": "38,694 pop.",
+    "urbPop": "20.6%",
+    "sngExpenditure": "44.2%",
+    "sngRevenue": "60.2%",
+    "sngDebt": "-",
+    "sngInvestment": "53.4%"
+  },
+  "Nicaragua": {
+    "population": 6625,
+    "gdpPerCapita": "$5,570",
+    "averageMunicipalitySize": "43,298 pop.",
+    "urbPop": "59.0%",
+    "sngExpenditure": "12.1%",
+    "sngRevenue": "16.7%",
+    "sngDebt": "-",
+    "sngInvestment": "34.2%"
+  },
+  "Palestinian Authority or West Bank and Gaza Strip": {
+    "population": 4803,
+    "gdpPerCapita": "$5,690",
+    "averageMunicipalitySize": "9,904 pop.",
+    "urbPop": "76.7%",
+    "sngExpenditure": "7.7%",
+    "sngRevenue": "9.3%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Paraguay": {
+    "population": 7133,
+    "gdpPerCapita": "$13,069",
+    "averageMunicipalitySize": "27,328 pop.",
+    "urbPop": "62.2%",
+    "sngExpenditure": "1.1%",
+    "sngRevenue": "1.2%",
+    "sngDebt": "0.0%",
+    "sngInvestment": "18.2%"
+  },
+  "Philippines": {
+    "population": 109581,
+    "gdpPerCapita": "$8,390",
+    "averageMunicipalitySize": "2,606 pop.",
+    "urbPop": "47.4%",
+    "sngExpenditure": "15.7%",
+    "sngRevenue": "19.4%",
+    "sngDebt": "0.6%",
+    "sngInvestment": "11.1%"
+  },
+  "Sri Lanka": {
+    "population": 21919,
+    "gdpPerCapita": "$13,225",
+    "averageMunicipalitySize": "64,279 pop.",
+    "urbPop": "18.7%",
+    "sngExpenditure": "11.1%",
+    "sngRevenue": "16.7%",
+    "sngDebt": "0.0%",
+    "sngInvestment": "-"
+  },
+  "Uruguay": {
+    "population": 3474,
+    "gdpPerCapita": "$22,794",
+    "averageMunicipalitySize": "27,790 pop.",
+    "urbPop": "95.5%",
+    "sngExpenditure": "12.3%",
+    "sngRevenue": "13.6%",
+    "sngDebt": "-",
+    "sngInvestment": "33.7%"
+  },
+  "Uzbekistan": {
+    "population": 34232,
+    "gdpPerCapita": "$7,734",
+    "averageMunicipalitySize": "3,734 pop.",
+    "urbPop": "50.4%",
+    "sngExpenditure": "29.6%",
+    "sngRevenue": "31.9%",
+    "sngDebt": "-",
+    "sngInvestment": "38.6%"
+  },
+  "Venezuela": {
+    "population": 28436,
+    "gdpPerCapita": "-",
+    "averageMunicipalitySize": "84,883 pop.",
+    "urbPop": "88.3%",
+    "sngExpenditure": "9.4%",
+    "sngRevenue": "10.4%",
+    "sngDebt": "-",
+    "sngInvestment": "48.4%"
+  },
+  "Viet Nam": {
+    "population": 97339,
+    "gdpPerCapita": "$8,650",
+    "averageMunicipalitySize": "9,171 pop.",
+    "urbPop": "37.3%",
+    "sngExpenditure": "60.5%",
+    "sngRevenue": "57.6%",
+    "sngDebt": "0.7%",
+    "sngInvestment": "71.4%"
+  },
+  "New Zealand": {
+    "population": 5084,
+    "gdpPerCapita": "$44,491",
+    "averageMunicipalitySize": "75,885 pop.",
+    "urbPop": "86.7%",
+    "sngExpenditure": "10.2%",
+    "sngRevenue": "11.3%",
+    "sngDebt": "6.9%",
+    "sngInvestment": "37.6%"
+  },
+  "United States": {
+    "population": 329484,
+    "gdpPerCapita": "$63,593",
+    "averageMunicipalitySize": "9,086 pop.",
+    "urbPop": "82.7%",
+    "sngExpenditure": "39.7%",
+    "sngRevenue": "58.6%",
+    "sngDebt": "39.8%",
+    "sngInvestment": "56.4%"
+  },
+  "United States of America": {
+    "population": 329484,
+    "gdpPerCapita": "$63,593",
+    "averageMunicipalitySize": "9,086 pop.",
+    "urbPop": "82.7%",
+    "sngExpenditure": "39.7%",
+    "sngRevenue": "58.6%",
+    "sngDebt": "39.8%",
+    "sngInvestment": "56.4%"
+  },
+  "Azerbaijan": {
+    "population": 10093,
+    "gdpPerCapita": "$14,480",
+    "averageMunicipalitySize": "6,285 pop.",
+    "urbPop": "56.4%",
+    "sngExpenditure": "2.0%",
+    "sngRevenue": "1.6%",
+    "sngDebt": "-",
+    "sngInvestment": "1.1%"
+  },
+  "Bulgaria": {
+    "population": 6934,
+    "gdpPerCapita": "$24,614",
+    "averageMunicipalitySize": "26,166 pop.",
+    "urbPop": "75.7%",
+    "sngExpenditure": "17.8%",
+    "sngRevenue": "20.4%",
+    "sngDebt": "2.5%",
+    "sngInvestment": "25.2%"
+  },
+  "Cambodia": {
+    "population": 16719,
+    "gdpPerCapita": "$4,421",
+    "averageMunicipalitySize": "10,157 pop.",
+    "urbPop": "24.2%",
+    "sngExpenditure": "9.3%",
+    "sngRevenue": "15.7%",
+    "sngDebt": "-",
+    "sngInvestment": "2.8%"
+  },
+  "Cyprus": {
+    "population": 1207,
+    "gdpPerCapita": "$39,453",
+    "averageMunicipalitySize": "3,177 pop.",
+    "urbPop": "66.8%",
+    "sngExpenditure": "3.6%",
+    "sngRevenue": "4.1%",
+    "sngDebt": "1.1%",
+    "sngInvestment": "14.7%"
+  },
+  "El Salvador": {
+    "population": 6486,
+    "gdpPerCapita": "$8,420",
+    "averageMunicipalitySize": "24,756 pop.",
+    "urbPop": "73.4%",
+    "sngExpenditure": "11.7%",
+    "sngRevenue": "18.6%",
+    "sngDebt": "3.2%",
+    "sngInvestment": "46.0%"
+  },
+  "Guatemala": {
+    "population": 16858,
+    "gdpPerCapita": "$8,854",
+    "averageMunicipalitySize": "49,583 pop.",
+    "urbPop": "51.8%",
+    "sngExpenditure": "11.7%",
+    "sngRevenue": "13.5%",
+    "sngDebt": "0.2%",
+    "sngInvestment": "56.0%"
+  },
+  "Kyrgyzstan": {
+    "population": 6592,
+    "gdpPerCapita": "$4,965",
+    "averageMunicipalitySize": "13,619 pop.",
+    "urbPop": "36.9%",
+    "sngExpenditure": "10.8%",
+    "sngRevenue": "10.9%",
+    "sngDebt": "0.3%",
+    "sngInvestment": "14.5%"
+  },
+  "Montenegro": {
+    "population": 621,
+    "gdpPerCapita": "$20,030",
+    "averageMunicipalitySize": "25,888 pop.",
+    "urbPop": "67.5%",
+    "sngExpenditure": "11.5%",
+    "sngRevenue": "15.8%",
+    "sngDebt": "2.9%",
+    "sngInvestment": "-"
+  },
+  "Panama": {
+    "population": 4315,
+    "gdpPerCapita": "$26,782",
+    "averageMunicipalitySize": "53,269 pop.",
+    "urbPop": "68.4%",
+    "sngExpenditure": "1.4%",
+    "sngRevenue": "1.7%",
+    "sngDebt": "-",
+    "sngInvestment": "3.7%"
+  },
+  "Thailand": {
+    "population": 69800,
+    "gdpPerCapita": "$18,233",
+    "averageMunicipalitySize": "28,571 pop.",
+    "urbPop": "51.4%",
+    "sngExpenditure": "15.8%",
+    "sngRevenue": "19.1%",
+    "sngDebt": "1.1%",
+    "sngInvestment": "30.5%"
+  },
+  "Jamaica": {
+    "population": 2890,
+    "gdpPerCapita": "$8,995",
+    "averageMunicipalitySize": "206,450 pop.",
+    "urbPop": "55.4%",
+    "sngExpenditure": "1.5%",
+    "sngRevenue": "2.2%",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Colombia": {
+    "population": 50883,
+    "gdpPerCapita": "$14,931",
+    "averageMunicipalitySize": "46,131 pop.",
+    "urbPop": "81.4%",
+    "sngExpenditure": "32.7%",
+    "sngRevenue": "43.3%",
+    "sngDebt": "13.2%",
+    "sngInvestment": "47.9%"
+  },
+  "Costa Rica": {
+    "population": 5094,
+    "gdpPerCapita": "$22,132",
+    "averageMunicipalitySize": "62,123 pop.",
+    "urbPop": "80.8%",
+    "sngExpenditure": "3.9%",
+    "sngRevenue": "4.5%",
+    "sngDebt": "0.2%",
+    "sngInvestment": "21.7%"
+  },
+  "Czechia": {
+    "population": 10699,
+    "gdpPerCapita": "$41,604",
+    "averageMunicipalitySize": "1,692 pop.",
+    "urbPop": "74.1%",
+    "sngExpenditure": "27.7%",
+    "sngRevenue": "32.5%",
+    "sngDebt": "3.5%",
+    "sngInvestment": "46.4%"
+  },
+  "Estonia": {
+    "population": 1331,
+    "gdpPerCapita": "$37,601",
+    "averageMunicipalitySize": "16,849 pop.",
+    "urbPop": "69.2%",
+    "sngExpenditure": "23.3%",
+    "sngRevenue": "26.6%",
+    "sngDebt": "4.5%",
+    "sngInvestment": "33.3%"
+  },
+  "Finland": {
+    "population": 5531,
+    "gdpPerCapita": "$50,506",
+    "averageMunicipalitySize": "17,899 pop.",
+    "urbPop": "85.5%",
+    "sngExpenditure": "40.1%",
+    "sngRevenue": "44.4%",
+    "sngDebt": "15.2%",
+    "sngInvestment": "58.5%"
+  },
+  "Greece": {
+    "population": 10716,
+    "gdpPerCapita": "$27,910",
+    "averageMunicipalitySize": "33,181 pop.",
+    "urbPop": "79.7%",
+    "sngExpenditure": "6.5%",
+    "sngRevenue": "8.0%",
+    "sngDebt": "1.3%",
+    "sngInvestment": "31.2%"
+  },
+  "Hungary": {
+    "population": 9750,
+    "gdpPerCapita": "$33,077",
+    "averageMunicipalitySize": "3,069 pop.",
+    "urbPop": "71.9%",
+    "sngExpenditure": "12.5%",
+    "sngRevenue": "15.0%",
+    "sngDebt": "2.3%",
+    "sngInvestment": "20.9%"
+  },
+  "Iceland": {
+    "population": 366,
+    "gdpPerCapita": "$53,622",
+    "averageMunicipalitySize": "5,311 pop.",
+    "urbPop": "93.9%",
+    "sngExpenditure": "29.1%",
+    "sngRevenue": "32.9%",
+    "sngDebt": "13.8%",
+    "sngInvestment": "38.8%"
+  },
+  "Ireland": {
+    "population": 4995,
+    "gdpPerCapita": "$93,181",
+    "averageMunicipalitySize": "161,120 pop.",
+    "urbPop": "63.7%",
+    "sngExpenditure": "8.9%",
+    "sngRevenue": "10.6%",
+    "sngDebt": "2.1%",
+    "sngInvestment": "32.5%"
+  },
+  "Italy": {
+    "population": 59554,
+    "gdpPerCapita": "$41,829",
+    "averageMunicipalitySize": "7,535 pop.",
+    "urbPop": "71.0%",
+    "sngExpenditure": "27.2%",
+    "sngRevenue": "32.2%",
+    "sngDebt": "11.2%",
+    "sngInvestment": "56.0%"
+  },
+  "Latvia": {
+    "population": 1902,
+    "gdpPerCapita": "$31,464",
+    "averageMunicipalitySize": "44,222 pop.",
+    "urbPop": "68.3%",
+    "sngExpenditure": "26.1%",
+    "sngRevenue": "28.8%",
+    "sngDebt": "9.3%",
+    "sngInvestment": "41.1%"
+  },
+  "Lithuania": {
+    "population": 2795,
+    "gdpPerCapita": "$38,883",
+    "averageMunicipalitySize": "46,578 pop.",
+    "urbPop": "68.1%",
+    "sngExpenditure": "22.7%",
+    "sngRevenue": "27.1%",
+    "sngDebt": "1.7%",
+    "sngInvestment": "39.5%"
+  },
+  "Luxembourg": {
+    "population": 632,
+    "gdpPerCapita": "$117,500",
+    "averageMunicipalitySize": "6,199 pop.",
+    "urbPop": "91.5%",
+    "sngExpenditure": "10.5%",
+    "sngRevenue": "11.5%",
+    "sngDebt": "1.5%",
+    "sngInvestment": "35.5%"
+  },
+  "Mexico": {
+    "population": 128933,
+    "gdpPerCapita": "$18,444",
+    "averageMunicipalitySize": "51,968 pop.",
+    "urbPop": "80.7%",
+    "sngExpenditure": "43.1%",
+    "sngRevenue": "60.0%",
+    "sngDebt": "2.5%",
+    "sngInvestment": "69.7%"
+  },
+  "Netherlands": {
+    "population": 17441,
+    "gdpPerCapita": "$59,268",
+    "averageMunicipalitySize": "49,549 pop.",
+    "urbPop": "92.2%",
+    "sngExpenditure": "29.1%",
+    "sngRevenue": "31.3%",
+    "sngDebt": "10.2%",
+    "sngInvestment": "44.2%"
+  },
+  "Norway": {
+    "population": 5379,
+    "gdpPerCapita": "$62,645",
+    "averageMunicipalitySize": "15,111 pop.",
+    "urbPop": "83.0%",
+    "sngExpenditure": "32.1%",
+    "sngRevenue": "32.4%",
+    "sngDebt": "21.2%",
+    "sngInvestment": "41.0%"
+  },
+  "Poland": {
+    "population": 37951,
+    "gdpPerCapita": "$34,240",
+    "averageMunicipalitySize": "15,321 pop.",
+    "urbPop": "60.0%",
+    "sngExpenditure": "30.6%",
+    "sngRevenue": "36.4%",
+    "sngDebt": "6.1%",
+    "sngInvestment": "43.2%"
+  },
+  "Slovak Republic": {
+    "population": 5459,
+    "gdpPerCapita": "$31,356",
+    "averageMunicipalitySize": "1,889 pop.",
+    "urbPop": "53.9%",
+    "sngExpenditure": "17.2%",
+    "sngRevenue": "20.0%",
+    "sngDebt": "3.1%",
+    "sngInvestment": "29.8%"
+  },
+  "Slovenia": {
+    "population": 2100,
+    "gdpPerCapita": "$39,769",
+    "averageMunicipalitySize": "9,906 pop.",
+    "urbPop": "55.1%",
+    "sngExpenditure": "17.5%",
+    "sngRevenue": "20.9%",
+    "sngDebt": "3.0%",
+    "sngInvestment": "39.8%"
+  },
+  "Türkiye": {
+    "population": 84339,
+    "gdpPerCapita": "$27,235",
+    "averageMunicipalitySize": "60,676 pop.",
+    "urbPop": "76.1%",
+    "sngExpenditure": "8.4%",
+    "sngRevenue": "10.5%",
+    "sngDebt": "3.6%",
+    "sngInvestment": "12.7%"
+  },
+  "Albania": {
+    "population": 2838,
+    "gdpPerCapita": "$13,440",
+    "averageMunicipalitySize": "46,520 pop.",
+    "urbPop": "62.1%",
+    "sngExpenditure": "18.7%",
+    "sngRevenue": "21.5%",
+    "sngDebt": "4.7%",
+    "sngInvestment": "20.0%"
+  },
+  "Bosnia and Herzegovina": {
+    "population": 3281,
+    "gdpPerCapita": "$15,623",
+    "averageMunicipalitySize": "23,268 pop.",
+    "urbPop": "49.0%",
+    "sngExpenditure": "10.5%",
+    "sngRevenue": "10.7%",
+    "sngDebt": "3.8%",
+    "sngInvestment": "18.9%"
+  },
+  "Croatia": {
+    "population": 23889,
+    "gdpPerCapita": "$28,842",
+    "averageMunicipalitySize": "43,043 pop.",
+    "urbPop": "57.6%",
+    "sngExpenditure": "26.1%",
+    "sngRevenue": "28.1%",
+    "sngDebt": "6.6%",
+    "sngInvestment": "45.1%"
+  },
+  "Georgia": {
+    "population": 3714,
+    "gdpPerCapita": "$14,767",
+    "averageMunicipalitySize": "58,031 pop.",
+    "urbPop": "59.5%",
+    "sngExpenditure": "16.7%",
+    "sngRevenue": "19.9%",
+    "sngDebt": "-",
+    "sngInvestment": "32.6%"
+  },
+  "Kazakhstan": {
+    "population": 18754,
+    "gdpPerCapita": "$26,754",
+    "averageMunicipalitySize": "2,703 pop.",
+    "urbPop": "57.7%",
+    "sngExpenditure": "44.5%",
+    "sngRevenue": "59.6%",
+    "sngDebt": "1.5%",
+    "sngInvestment": "88.0%"
+  },
+  "Mongolia": {
+    "population": 3278,
+    "gdpPerCapita": "$12,367",
+    "averageMunicipalitySize": "1,917 pop.",
+    "urbPop": "68.7%",
+    "sngExpenditure": "24.0%",
+    "sngRevenue": "30.5%",
+    "sngDebt": "1.3%",
+    "sngInvestment": "29.5%"
+  },
+  "North Macedonia": {
+    "population": 2073,
+    "gdpPerCapita": "$16,960",
+    "averageMunicipalitySize": "25,587 pop.",
+    "urbPop": "58.5%",
+    "sngExpenditure": "13.6%",
+    "sngRevenue": "17.0%",
+    "sngDebt": "-",
+    "sngInvestment": "44.9%"
+  },
+  "Pakistan": {
+    "population": 220892,
+    "gdpPerCapita": "$4,813",
+    "averageMunicipalitySize": "17,859 pop.",
+    "urbPop": "37.2%",
+    "sngExpenditure": "32.8%",
+    "sngRevenue": "66.5%",
+    "sngDebt": "4.2%",
+    "sngInvestment": "-"
+  },
+  "Peru": {
+    "population": 32972,
+    "gdpPerCapita": "$11,879",
+    "averageMunicipalitySize": "15,936 pop.",
+    "urbPop": "78.3%",
+    "sngExpenditure": "34.8%",
+    "sngRevenue": "40.6%",
+    "sngDebt": "0.6%",
+    "sngInvestment": "61.9%"
+  },
+  "Romania": {
+    "population": 19329,
+    "gdpPerCapita": "$32,116",
+    "averageMunicipalitySize": "6,078 pop.",
+    "urbPop": "53.9%",
+    "sngExpenditure": "22.6%",
+    "sngRevenue": "28.1%",
+    "sngDebt": "3.3%",
+    "sngInvestment": "52.7%"
+  },
+  "Serbia": {
+    "population": 6908,
+    "gdpPerCapita": "$19,107",
+    "averageMunicipalitySize": "47,643 pop.",
+    "urbPop": "56.5%",
+    "sngExpenditure": "19.0%",
+    "sngRevenue": "22.1%",
+    "sngDebt": "1.8%",
+    "sngInvestment": "16.1%"
+  },
+  "Tajikistan": {
+    "population": 9538,
+    "gdpPerCapita": "$3,858",
+    "averageMunicipalitySize": "25,918 pop.",
+    "urbPop": "27.5%",
+    "sngExpenditure": "28.3%",
+    "sngRevenue": "29.6%",
+    "sngDebt": "-",
+    "sngInvestment": "20.7%"
+  },
+  "Ukraine": {
+    "population": 44135,
+    "gdpPerCapita": "$13,055",
+    "averageMunicipalitySize": "30,044 pop.",
+    "urbPop": "69.6%",
+    "sngExpenditure": "25.0%",
+    "sngRevenue": "28.0%",
+    "sngDebt": "0.7%",
+    "sngInvestment": "68.2%"
+  },
+  "Canada": {
+    "population": 38005,
+    "gdpPerCapita": "$46,611",
+    "averageMunicipalitySize": "9,732 pop.",
+    "urbPop": "81.6%",
+    "sngExpenditure": "64.1%",
+    "sngRevenue": "78.8%",
+    "sngDebt": "75.8%",
+    "sngInvestment": "84.5%"
+  },
+  "Japan": {
+    "population": 125836,
+    "gdpPerCapita": "$42,390",
+    "averageMunicipalitySize": "72,030 pop.",
+    "urbPop": "91.8%",
+    "sngExpenditure": "39.5%",
+    "sngRevenue": "43.0%",
+    "sngDebt": "31.5%",
+    "sngInvestment": "67.7%"
+  },
+  "Korea": {
+    "population": 51781,
+    "gdpPerCapita": "$45,274",
+    "averageMunicipalitySize": "229,118 pop.",
+    "urbPop": "81.4%",
+    "sngExpenditure": "45.8%",
+    "sngRevenue": "47.3%",
+    "sngDebt": "2.9%",
+    "sngInvestment": "59.0%"
+  },
+  "India": {
+    "population": 1380004,
+    "gdpPerCapita": "$6,504",
+    "averageMunicipalitySize": "5,160 pop.",
+    "urbPop": "34.9%",
+    "sngExpenditure": "62.5%",
+    "sngRevenue": "67.5%",
+    "sngDebt": "20.4%",
+    "sngInvestment": "64.1%"
+  },
+  "Moldova": {
+    "population": 2620,
+    "gdpPerCapita": "$13,000",
+    "averageMunicipalitySize": "2,918 pop.",
+    "urbPop": "42.9%",
+    "sngExpenditure": "24.5%",
+    "sngRevenue": "29.2%",
+    "sngDebt": "0.6%",
+    "sngInvestment": "51.3%"
+  },
+  "France": {
+    "population": 67392,
+    "gdpPerCapita": "$46,983",
+    "averageMunicipalitySize": "1,928 pop.",
+    "urbPop": "81.0%",
+    "sngExpenditure": "19.0%",
+    "sngRevenue": "21.8%",
+    "sngDebt": "11.9%",
+    "sngInvestment": "56.4%"
+  },
+  "Portugal": {
+    "population": 10306,
+    "gdpPerCapita": "$34,149",
+    "averageMunicipalitySize": "33,460 pop.",
+    "urbPop": "66.3%",
+    "sngExpenditure": "13.6%",
+    "sngRevenue": "15.2%",
+    "sngDebt": "6.2%",
+    "sngInvestment": "50.0%"
+  },
+  "Bangladesh": {
+    "population": 164689,
+    "gdpPerCapita": "$5,139",
+    "averageMunicipalitySize": "33,651 pop.",
+    "urbPop": "38.2%",
+    "sngExpenditure": "5.1%",
+    "sngRevenue": "6.7%",
+    "sngDebt": "0.1%",
+    "sngInvestment": "-"
+  },
+  "Bhutan": {
+    "population": 772,
+    "gdpPerCapita": "$11,130",
+    "averageMunicipalitySize": "3,692 pop.",
+    "urbPop": "42.3%",
+    "sngExpenditure": "35.2%",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Lao People’s Democratic Republic": {
+    "population": 7276,
+    "gdpPerCapita": "$8,239",
+    "averageMunicipalitySize": "855 pop.",
+    "urbPop": "36.3%",
+    "sngExpenditure": "-",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Haiti": {
+    "population": 11403,
+    "gdpPerCapita": "$3,095",
+    "averageMunicipalitySize": "78,100 pop.",
+    "urbPop": "57.1%",
+    "sngExpenditure": "-",
+    "sngRevenue": "-",
+    "sngDebt": "-",
+    "sngInvestment": "-"
+  },
+  "Israel": {
+    "population": 9217,
+    "gdpPerCapita": "$39,482",
+    "averageMunicipalitySize": "35,724 pop.",
+    "urbPop": "92.6%",
+    "sngExpenditure": "12.8%",
+    "sngRevenue": "17.3%",
+    "sngDebt": "2.0%",
+    "sngInvestment": "46.4%"
+  },
+  "Denmark": {
+    "population": 5831,
+    "gdpPerCapita": "$60,230",
+    "averageMunicipalitySize": "59,504 pop.",
+    "urbPop": "88.1%",
+    "sngExpenditure": "64.4%",
+    "sngRevenue": "64.6%",
+    "sngDebt": "10.8%",
+    "sngInvestment": "46.9%"
+  },
+  "Kosovo": {
+    "population": 1775,
+    "gdpPerCapita": "$11,388",
+    "averageMunicipalitySize": "46,720 pop.",
+    "urbPop": "37.3%",
+    "sngExpenditure": "23.5%",
+    "sngRevenue": "3.1%",
+    "sngDebt": "-",
+    "sngInvestment": "43.7%"
+  },
+  "United Kingdom": {
+    "population": 67215,
+    "gdpPerCapita": "$46,483",
+    "averageMunicipalitySize": "179,720 pop.",
+    "urbPop": "83.9%",
+    "sngExpenditure": "20.7%",
+    "sngRevenue": "28.2%",
+    "sngDebt": "9.7%",
+    "sngInvestment": "29.3%"
+  }
+}
