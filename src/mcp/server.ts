@@ -334,7 +334,7 @@ export function createChampMcpServer(options: CreateMcpServerOptions = {}): McpS
   // =========================================================================
   server.tool(
     "get_guidance_by_national_lead",
-    "Retrieve authoritative, source-grounded guidance for a Potential National Lead, optional country, and selected CHAMP Action (1-5). Distinguishes direct lead matches from general action pathways. Returns guidance organized pathway-by-pathway: (1) Pathway context, (2) Overview from Airtable, (3) Implementation Guidance steps verbatim, (4) Transferability Considerations verbatim, (5) Linked Examples and Tools, and (6) Country Journey evidence if requested. CRITICAL PROHIBITION: DO NOT GENERATE IMPLEMENTATION ROADMAPS, WORKPLANS, PHASES (Phase 1, Phase 2...), DELIVERABLES, MILESTONES, OR TIMELINES. The CHAMP Toolkit provides guidance, not prescribed planning sequences. If the user asks for a roadmap or plan, politely state that the Toolkit does not prescribe a roadmap or timeline, and present the relevant Pathways as documented reference material. Never combine steps across pathways into a new sequence.",
+    "Retrieve existing CHAMP Toolkit guidance for a selected Potential National Lead, optionally filtered by CHAMP Action and country.\n\nThis tool returns source-bounded CHAMP knowledge from Airtable, including relevant Pathways, Overview, Implementation Guidance, Transferability Considerations, Peer Learning Examples, Tools, Resources, and published Country Journey content.\n\nCRITICAL CLIENT INSTRUCTION:\n\nThe returned content is the complete substantive boundary for the answer.\n\nYou may explain, summarise, organise, and compare this content, but you must not introduce additional implementation guidance.\n\nDo not create a new roadmap, workplan, timeline, implementation phase, milestone, deliverable, programme, financing facility, institutional arrangement, or policy recommendation from the retrieved material.\n\nDo not merge steps from different Pathways into a new implementation sequence.\n\nPresent documented Implementation Guidance under its corresponding Pathway, preserving the source-defined step order.\n\nDo not generate a 'Suggested implementation workplan' or equivalent section.\n\nDo not justify unsupported planning content by labelling it illustrative, synthesized, suggested, or not prescribed.\n\nWhen asked for an action plan, present the relevant existing CHAMP Implementation Guidance instead of creating a new plan.\n\nUse Overview as the explanatory source for Pathways. What It Is and Why It Is Needed are empty fields. There is no Enabling Conditions content category.\n\nDo not use external knowledge to expand the guidance.\n\nDo not describe the CHAMP Toolkit as official.\n\nDo not expose internal Airtable field identifiers or record IDs in ordinary user-facing responses.",
     {
       national_lead: z.string().describe("Required Potential National Lead (e.g. 'Climate / Environment Ministry', 'Finance Ministry', 'Urban / Local Government Ministry')"),
       action_id: z.number().int().min(1).max(5).optional().describe("CHAMP Action Number (1 to 5). Must correspond to one of the five official actions."),
@@ -841,7 +841,8 @@ export function createMcpExpressRouter(options: CreateMcpServerOptions = {}): ex
         "/api/guidance/generate": {
           post: {
             operationId: "get_guidance_by_national_lead",
-            summary: "Generate a 10-section personalised implementation briefing based on National Lead, optional country, and CHAMP Action (1-5).",
+            summary: "Retrieve existing CHAMP Toolkit guidance for a selected Potential National Lead from Airtable.",
+            description: "Retrieve existing CHAMP Toolkit guidance for a selected Potential National Lead, optionally filtered by CHAMP Action and country. Returns source-bounded CHAMP knowledge from Airtable organised by pathway.",
             requestBody: {
               required: true,
               content: {
@@ -851,7 +852,7 @@ export function createMcpExpressRouter(options: CreateMcpServerOptions = {}): ex
                     required: ["national_lead"],
                     properties: {
                       national_lead: { type: "string", description: "Potential National Lead (e.g. Finance Ministry, Climate / Environment Ministry)" },
-                      action_id: { type: "integer", minimum: 1, maximum: 5, description: "Official CHAMP Action Number (1 to 5)" },
+                      action_id: { type: "integer", minimum: 1, maximum: 5, description: "CHAMP Action Number (1 to 5)" },
                       country: { type: "string", description: "Optional country name or slug (e.g. Sweden)" },
                       include_country_examples: { type: "boolean", default: true }
                     }
@@ -859,7 +860,7 @@ export function createMcpExpressRouter(options: CreateMcpServerOptions = {}): ex
                 }
               }
             },
-            responses: { "200": { description: "Personalised implementation briefing" } }
+            responses: { "200": { description: "Source-bounded CHAMP Toolkit guidance" } }
           }
         },
         "/api/guidance/leads": {
@@ -1002,7 +1003,7 @@ export function createMcpExpressRouter(options: CreateMcpServerOptions = {}): ex
     },
     {
       name: "get_guidance_by_national_lead",
-      description: "Generate a complete 10-section implementation briefing based on the user's Potential National Lead, optional country, and selected CHAMP Action (1-5). Distinguishes direct lead matches from general action guidance.",
+      description: "Retrieve existing CHAMP Toolkit guidance for a selected Potential National Lead, optionally filtered by CHAMP Action and country.\n\nThis tool returns source-bounded CHAMP knowledge from Airtable, including relevant Pathways, Overview, Implementation Guidance, Transferability Considerations, Peer Learning Examples, Tools, Resources, and published Country Journey content.\n\nCRITICAL CLIENT INSTRUCTION:\n\nThe returned content is the complete substantive boundary for the answer.\n\nYou may explain, summarise, organise, and compare this content, but you must not introduce additional implementation guidance.\n\nDo not create a new roadmap, workplan, timeline, implementation phase, milestone, deliverable, programme, financing facility, institutional arrangement, or policy recommendation from the retrieved material.\n\nDo not merge steps from different Pathways into a new implementation sequence.\n\nPresent documented Implementation Guidance under its corresponding Pathway, preserving the source-defined step order.\n\nDo not generate a 'Suggested implementation workplan' or equivalent section.\n\nDo not justify unsupported planning content by labelling it illustrative, synthesized, suggested, or not prescribed.\n\nWhen asked for an action plan, present the relevant existing CHAMP Implementation Guidance instead of creating a new plan.\n\nUse Overview as the explanatory source for Pathways. What It Is and Why It Is Needed are empty fields. There is no Enabling Conditions content category.\n\nDo not use external knowledge to expand the guidance.\n\nDo not describe the CHAMP Toolkit as official.\n\nDo not expose internal Airtable field identifiers or record IDs in ordinary user-facing responses.",
       inputSchema: {
         type: "object",
         properties: {

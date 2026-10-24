@@ -795,9 +795,11 @@ async function runTestSuite() {
     assert(fmGuidance4.markdownBriefing?.includes("4.2"), "QA 11.1: Includes relevant Pathway 4.2");
     assert(fmGuidance4.markdownBriefing?.includes("4.3"), "QA 11.1: Includes relevant Pathway 4.3");
 
-    assert(fmBriefingText.includes("#### 1. Overview"), "QA 11.1: Includes Pathway Overview section");
-    assert(fmBriefingText.includes("#### 2. Implementation Guidance (Documented Steps)"), "QA 11.1: Includes Documented Implementation Steps");
-    assert(fmBriefingText.includes("#### 3. Transferability Considerations"), "QA 11.1: Includes Transferability Considerations");
+    assert(fmBriefingText.includes("CHAMP SOURCE-FIDELITY REQUIREMENT"), "QA 11.1: Includes CHAMP Source-Fidelity requirement header");
+    assert(fmBriefingText.includes("## Relevant CHAMP Pathways"), "QA 11.1: Includes source-preserving Pathways heading");
+    assert(fmBriefingText.includes("#### Overview"), "QA 11.1: Includes Pathway Overview section");
+    assert(fmBriefingText.includes("#### Implementation Guidance"), "QA 11.1: Includes Documented Implementation Steps");
+    assert(fmBriefingText.includes("#### Transferability Considerations"), "QA 11.1: Includes Transferability Considerations");
 
     // Check automated validation layer on output
     const fmValidation = validateSourcePreservingContent(fmBriefingText);
