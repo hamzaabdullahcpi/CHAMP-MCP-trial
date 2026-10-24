@@ -646,7 +646,7 @@ export class ChampToolsService {
 
     // Format clean, source-grounded Markdown text with natural citations
     const textLines: string[] = [];
-    textLines.push(`# Official CHAMP Toolkit Guidance: ${pathway.pathwayTitle}`);
+    textLines.push(`# CHAMP Toolkit Guidance: ${pathway.pathwayTitle}`);
     if (parentAction) {
       textLines.push(`**Parent Action:** Action ${parentAction.actionNumber}: ${parentAction.title}`);
       textLines.push(`> "${parentAction.description}"\n`);
@@ -658,24 +658,24 @@ export class ChampToolsService {
     }
     textLines.push(`---\n`);
 
-    // Section A
-    textLines.push(`## Section A: Official CHAMP Toolkit Guidance (Implementation Steps)`);
+    // Implementation Guidance
+    textLines.push(`## Implementation Guidance (Documented Steps)`);
     for (const g of linkedGuidance) {
       textLines.push(`\n### Step ${g.stepOrder}: ${g.stepTitle}`);
       textLines.push(`> "${g.detailedContent}"`);
     }
     textLines.push(`\n---\n`);
 
-    // Section B
-    textLines.push(`## Section B: How to Adapt This Pathway to Your Context`);
+    // Contextual Adaptation
+    textLines.push(`## How to Adapt This Pathway to Your Context (Transferability Considerations)`);
     if (pathway.transferabilityPreamble) textLines.push(`*${pathway.transferabilityPreamble}*`);
     for (const tc of pathway.transferability) {
       textLines.push(`- ${tc}`);
     }
     textLines.push(`\n---\n`);
 
-    // Section C
-    textLines.push(`## Section C: Peer Learning Examples`);
+    // Peer Learning Examples
+    textLines.push(`## Peer Learning Examples`);
     const peerExamples = linkedKeyResources.filter((kr) => !kr.type.toLowerCase().includes("tool"));
     if (peerExamples.length > 0) {
       for (const pe of peerExamples) {
@@ -683,7 +683,7 @@ export class ChampToolsService {
         if (pe.whySeeThisOrWhenToUseThis) textLines.push(`*Context:* ${pe.whySeeThisOrWhenToUseThis}`);
         if (pe.fullText) textLines.push(`> "${pe.fullText}"`);
         else if (pe.excerpt) textLines.push(`> "${pe.excerpt}"`);
-        if (pe.learnMoreUrl) textLines.push(`*Official Link:* [${pe.learnMoreUrl}](${pe.learnMoreUrl})`);
+        if (pe.learnMoreUrl) textLines.push(`*Source Link:* [${pe.learnMoreUrl}](${pe.learnMoreUrl})`);
         for (const sub of pe.subExamples) {
           textLines.push(`\n- **Sub-Example: ${sub.title}**`);
           if (sub.fullText) textLines.push(`  ${sub.fullText}`);
@@ -696,8 +696,8 @@ export class ChampToolsService {
     }
     textLines.push(`\n---\n`);
 
-    // Section D
-    textLines.push(`## Section D: Relevant Tools and Resources`);
+    // Relevant Tools and Resources
+    textLines.push(`## Relevant Tools and Resources`);
     const toolsList = linkedKeyResources.filter((kr) => kr.type.toLowerCase().includes("tool"));
     if (toolsList.length > 0) {
       textLines.push(`\n### Tools & Technical Instruments:`);
@@ -705,7 +705,7 @@ export class ChampToolsService {
         textLines.push(`- **${t.exampleTitle}**`);
         if (t.whySeeThisOrWhenToUseThis) textLines.push(`  *Purpose:* ${t.whySeeThisOrWhenToUseThis}`);
         if (t.fullText) textLines.push(`  ${t.fullText}`);
-        if (t.learnMoreUrl) textLines.push(`  *Official Tool Link:* [${t.learnMoreUrl}](${t.learnMoreUrl})`);
+        if (t.learnMoreUrl) textLines.push(`  *Tool Link:* [${t.learnMoreUrl}](${t.learnMoreUrl})`);
       }
     }
     if (linkedAdditionalResources.length > 0) {
@@ -1238,6 +1238,7 @@ export class ChampToolsService {
       .filter((kr) => kr.belongsToPathwayId && activePathwayIds.has(kr.belongsToPathwayId))
       .map((kr) => ({
         id: kr.id,
+        pathwayRecordId: kr.belongsToPathwayId,
         title: kr.exampleTitle,
         type: kr.type,
         whyOrWhenNote: kr.whySeeThisOrWhenToUseThis,
@@ -1258,6 +1259,7 @@ export class ChampToolsService {
       .filter((ar) => ar.belongsToPathwayId && activePathwayIds.has(ar.belongsToPathwayId))
       .map((ar) => ({
         id: ar.id,
+        belongsToPathwayId: ar.belongsToPathwayId,
         title: ar.resourceTitle,
         type: ar.resourceType,
         publisher: ar.publisherOrOrganization,
@@ -1270,6 +1272,7 @@ export class ChampToolsService {
       .filter((cb) => cb.belongsToPathwayId && activePathwayIds.has(cb.belongsToPathwayId))
       .map((cb) => ({
         id: cb.id,
+        belongsToPathwayId: cb.belongsToPathwayId,
         title: cb.boxTitle,
         category: cb.category,
         excerpt: cb.excerpt,
@@ -1494,11 +1497,11 @@ export class ChampToolsService {
     }
 
     provenanceRecords.push({
-      sourceType: "Assistant Synthesis",
-      table: "N/A (Generated Interpretation)",
-      recordId: "assistant-synthesis",
-      fieldName: "Section F / Synthesis",
-      entityTitle: "Assistant synthesis based on the cited CHAMP sources",
+      sourceType: "Scope Notice",
+      table: "N/A (Toolkit Scope)",
+      recordId: "champ-scope-notice",
+      fieldName: "Section F / Source Policy",
+      entityTitle: "CHAMP Toolkit Source Grounding Notice",
       evidenceLevel: "assistant_interpretation"
     });
 
@@ -1559,6 +1562,7 @@ export class ChampToolsService {
       .filter((kr) => !kr.type.toLowerCase().includes("tool"))
       .map((kr) => ({
         recordId: kr.id,
+        pathwayRecordId: kr.pathwayRecordId,
         title: kr.title,
         type: kr.type,
         whySeeThisOrWhenToUseThis: kr.whyOrWhenNote,
@@ -1582,6 +1586,7 @@ export class ChampToolsService {
         .filter((kr) => kr.type.toLowerCase().includes("tool"))
         .map((t) => ({
           recordId: t.id,
+          pathwayRecordId: t.pathwayRecordId,
           title: t.title,
           whySeeThisOrWhenToUseThis: t.whyOrWhenNote,
           fullText: t.fullText,
@@ -1590,6 +1595,7 @@ export class ChampToolsService {
         })),
       additionalResources: linkedAdditionalResources.map((ar) => ({
         recordId: ar.id || ar.title,
+        pathwayRecordId: ar.belongsToPathwayId,
         title: ar.title,
         type: ar.type,
         publisher: ar.publisher,
@@ -1599,6 +1605,7 @@ export class ChampToolsService {
       })),
       conceptBoxes: linkedConceptBoxes.map((cb) => ({
         recordId: cb.id || cb.title,
+        pathwayRecordId: cb.belongsToPathwayId,
         title: cb.title,
         category: cb.category,
         excerpt: cb.excerpt,
@@ -1640,13 +1647,11 @@ export class ChampToolsService {
         : null
     };
 
-    // Strict Section F Structure (Optional Brief Synthesis)
+    // Strict Section F Structure (Source Grounding & Scope Notice)
     const sectionF_Synthesis = {
-      label: "Assistant synthesis based on the cited CHAMP sources",
-      synthesisContent: matchedPathways.length > 0
-        ? `For ${normalizedSelectedLead}, Action ${targetAction.actionNumber} centres on leading ${matchedPathways.map((p) => p.pathwayTitle).join(" and ")}. Effective implementation involves following the sequential steps in Section A, applying the context considerations in Section B, and collaborating with documented partners (${keyActorsList.slice(0, 4).join(", ")}).`
-        : `While ${normalizedSelectedLead} is not explicitly designated as primary lead for pathways under Action ${targetAction.actionNumber}, it provides essential cross-governmental support and alignment alongside designated leads.`,
-      disclaimer: "This brief synthesis is strictly derived from the official records cited above and introduces no independent policy prescriptions."
+      label: "CHAMP Toolkit Source Grounding Notice",
+      synthesisContent: "The CHAMP Toolkit contains guidance and documented implementation steps organized by pathway. It does not prescribe an implementation roadmap, chronological phases, or workplan deliverables.",
+      disclaimer: "All guidance is presented as documented in the CHAMP Airtable knowledge base."
     };
 
     // Construct the structured briefing (supporting both web UI and strict A-F properties)
@@ -1752,20 +1757,21 @@ export class ChampToolsService {
 
     // Render a high-fidelity Markdown Briefing for assistant/user inspection
     const markdownBriefing = this.renderMarkdownBriefing(briefing);
-    briefing.markdownBriefing = markdownBriefing;
+    const validation = validateSourcePreservingContent(markdownBriefing);
+    briefing.markdownBriefing = validation.isValid ? markdownBriefing : validation.sanitizedText;
 
     return {
       success: true,
       briefing,
-      markdownBriefing
+      markdownBriefing: briefing.markdownBriefing
     };
   }
 
-  // Format strict source-grounded response adhering to Sections A-F and Authoritative Source Policy
+  // Format source-grounded response organized by Pathway adhering to Authoritative Source Policy
   private renderMarkdownBriefing(b: PersonalisedBriefing): string {
     const lines: string[] = [];
 
-    lines.push(`# Official CHAMP Source-Grounded Guidance`);
+    lines.push(`# CHAMP Toolkit Knowledge Guidance`);
     lines.push(`**Potential National Lead:** ${b.normalizedNationalLead}`);
     lines.push(
       `**CHAMP Action / Implementation Priority:** Action ${b.sectionA_SelectedAction.actionNumber}: ${b.sectionA_SelectedAction.title}`
@@ -1775,120 +1781,147 @@ export class ChampToolsService {
     } else {
       lines.push(`**Country Context:** Global Toolkit Evidence (No country specified)`);
     }
-    lines.push(`**Authoritative Source Policy:** All substantive guidance below is reproduced directly from approved records in the official CHAMP Airtable base. In accordance with the Toolkit-First Policy, steps and transferability considerations are presented verbatim without generative alteration.`);
+    lines.push(
+      `**Authoritative Source Policy:** All substantive guidance below is reproduced directly from approved records in the CHAMP Airtable knowledge base. The CHAMP Toolkit provides implementation guidance organized by pathway; it does not prescribe planning sequences, chronological phases, workplan timelines, or deliverables. Steps and transferability considerations are presented pathway-by-pathway as documented.`
+    );
     lines.push(`---\n`);
 
-    // =========================================================================
-    // SECTION A: Official CHAMP Toolkit Guidance
-    // =========================================================================
-    lines.push(`## Section A: Official CHAMP Toolkit Guidance`);
-    lines.push(`### Action ${b.sectionA_SelectedAction.actionNumber}: ${b.sectionA_SelectedAction.title}`);
+    // Parent Action Context
+    lines.push(`## CHAMP Action ${b.sectionA_SelectedAction.actionNumber}: ${b.sectionA_SelectedAction.title}`);
     lines.push(`> "${b.sectionA_SelectedAction.description}"\n`);
     if (b.sectionA_SelectedAction.systemsLogic) {
       lines.push(`**Systems Logic:**\n> "${b.sectionA_SelectedAction.systemsLogic}"\n`);
     }
+    lines.push(`---\n`);
+
+    // Pathways - Structured Pathway-by-Pathway (Required Change 4)
+    lines.push(`## Relevant CHAMP Pathways\n`);
 
     if (b.sectionA_OfficialGuidance?.pathways) {
       for (const p of b.sectionA_OfficialGuidance.pathways) {
         lines.push(`### Pathway: ${p.pathwayTitle}`);
-        lines.push(`- **National Lead Designation:** ${p.isDirectNationalLeadMatch ? `Explicit match for **${b.normalizedNationalLead}**` : `General Action pathway (Designated leads: ${p.potentialNationalLead.join(", ")})`}`);
+        lines.push(
+          `- **National Lead Designation:** ${
+            p.isDirectNationalLeadMatch
+              ? `Explicit match for **${b.normalizedNationalLead}**`
+              : `General Action pathway (Designated leads: ${p.potentialNationalLead.join(", ")})`
+          }`
+        );
         lines.push(`- **Key Actors:** ${p.keyActors.join(", ") || "Multi-stakeholder"}`);
+
+        // 1. Overview
+        lines.push(`\n#### 1. Overview`);
         if (p.overview) {
-          lines.push(`\n**Pathway Overview:**\n${p.overview}\n`);
+          lines.push(`${p.overview}\n`);
+        } else {
+          lines.push(`*This is not specified in the available CHAMP Toolkit content.*\n`);
         }
 
-        lines.push(`\n#### Official Implementation Guidance (Verbatim in Sequence):`);
-        if (p.implementationSteps.length === 0) {
-          lines.push(`*This is not specified in the available CHAMP Toolkit content for this pathway.*`);
+        // 2. Implementation Guidance
+        lines.push(`#### 2. Implementation Guidance (Documented Steps)`);
+        if (!p.implementationSteps || p.implementationSteps.length === 0) {
+          lines.push(`*This is not specified in the available CHAMP Toolkit content for this pathway.*\n`);
         } else {
           for (const s of p.implementationSteps) {
             lines.push(`##### Step ${s.stepOrder}: ${s.stepTitle}`);
             lines.push(`> "${s.detailedContent}"\n`);
           }
         }
-      }
-    }
-    lines.push(`---\n`);
 
-    // =========================================================================
-    // SECTION B: How to Adapt This Pathway to Your Context
-    // =========================================================================
-    lines.push(`## Section B: How to Adapt This Pathway to Your Context`);
-    if (b.sectionB_AdaptationTransferability && b.sectionB_AdaptationTransferability.length > 0) {
-      for (const tc of b.sectionB_AdaptationTransferability) {
-        lines.push(`### ${tc.pathwayTitle}`);
-        if (tc.preamble) {
-          lines.push(`*${tc.preamble}*`);
-        }
-        if (tc.considerations.length > 0) {
-          for (const c of tc.considerations) {
+        // 3. Transferability Considerations
+        lines.push(`#### 3. Transferability Considerations (Contextual Adaptation)`);
+        const pTransfer = (b.sectionB_AdaptationTransferability || []).find(
+          (tc) => tc.pathwayRecordId === p.recordId || tc.pathwayTitle === p.pathwayTitle
+        );
+        if (pTransfer && pTransfer.considerations && pTransfer.considerations.length > 0) {
+          if (pTransfer.preamble) {
+            lines.push(`*${pTransfer.preamble}*`);
+          }
+          for (const c of pTransfer.considerations) {
             lines.push(`- ${c}`);
           }
+          lines.push("");
         } else {
-          lines.push(`*This is not specified in the available CHAMP Toolkit content.*`);
+          lines.push(`*This is not specified in the available CHAMP Toolkit content.*\n`);
         }
-        lines.push("");
-      }
-    } else {
-      lines.push(`*This is not specified in the available CHAMP Toolkit content.*`);
-    }
-    lines.push(`---\n`);
 
-    // =========================================================================
-    // SECTION C: Peer Learning Examples
-    // =========================================================================
-    lines.push(`## Section C: Peer Learning Examples`);
-    if (b.sectionC_PeerLearningExamples && b.sectionC_PeerLearningExamples.length > 0) {
-      for (const ex of b.sectionC_PeerLearningExamples) {
-        lines.push(`### ${ex.title} (${ex.type})`);
-        if (ex.whySeeThisOrWhenToUseThis) lines.push(`*Contextual Guidance:* ${ex.whySeeThisOrWhenToUseThis}`);
-        if (ex.fullText) lines.push(`> "${ex.fullText}"`);
-        else if (ex.excerpt) lines.push(`> "${ex.excerpt}"`);
-        if (ex.verifiedUrl) lines.push(`*Official Source Link:* [${ex.verifiedUrl}](${ex.verifiedUrl})`);
-        if (ex.subExamples && ex.subExamples.length > 0) {
-          for (const sub of ex.subExamples) {
-            lines.push(`\n- **Sub-Example: ${sub.title}**`);
-            if (sub.fullText) lines.push(`  ${sub.fullText}`);
-            else if (sub.excerpt) lines.push(`  ${sub.excerpt}`);
-            if (sub.verifiedUrl) lines.push(`  *Link:* [${sub.verifiedUrl}](${sub.verifiedUrl})`);
+        // 4. Relevant Examples and Tools
+        const pExamples = (b.sectionC_PeerLearningExamples || []).filter(
+          (ex: any) => ex.pathwayRecordId === p.recordId
+        );
+        const pTools = (b.sectionD_ToolsAndResources?.tools || []).filter(
+          (t: any) => t.pathwayRecordId === p.recordId
+        );
+
+        if (pExamples.length > 0 || pTools.length > 0) {
+          lines.push(`#### 4. Relevant Examples and Tools`);
+          for (const ex of pExamples) {
+            lines.push(`- **Example: ${ex.title}** (${ex.type})`);
+            if (ex.whySeeThisOrWhenToUseThis) lines.push(`  *Context:* ${ex.whySeeThisOrWhenToUseThis}`);
+            if (ex.fullText) lines.push(`  > "${ex.fullText}"`);
+            else if (ex.excerpt) lines.push(`  > "${ex.excerpt}"`);
+            if (ex.verifiedUrl) lines.push(`  *Source Link:* [${ex.verifiedUrl}](${ex.verifiedUrl})`);
           }
+          for (const t of pTools) {
+            lines.push(`- **Tool: ${t.title}**`);
+            if (t.whySeeThisOrWhenToUseThis) lines.push(`  *When to use:* ${t.whySeeThisOrWhenToUseThis}`);
+            if (t.fullText) lines.push(`  ${t.fullText}`);
+            if (t.verifiedUrl) lines.push(`  *Tool Link:* [${t.verifiedUrl}](${t.verifiedUrl})`);
+          }
+          lines.push("");
+        }
+
+        lines.push(`---\n`);
+      }
+    }
+
+    // Additional Action-Level Tools and Supporting Resources (if any exist not already displayed)
+    const unlinkedExamples = (b.sectionC_PeerLearningExamples || []).filter(
+      (ex: any) => !ex.pathwayRecordId
+    );
+    const unlinkedTools = (b.sectionD_ToolsAndResources?.tools || []).filter(
+      (t: any) => !t.pathwayRecordId
+    );
+    const additionalResources = b.sectionD_ToolsAndResources?.additionalResources || [];
+    const conceptBoxes = b.sectionD_ToolsAndResources?.conceptBoxes || [];
+
+    if (
+      unlinkedExamples.length > 0 ||
+      unlinkedTools.length > 0 ||
+      additionalResources.length > 0 ||
+      conceptBoxes.length > 0
+    ) {
+      lines.push(`## Action Supporting Resources\n`);
+      if (unlinkedExamples.length > 0) {
+        lines.push(`### Additional Peer Learning Examples:`);
+        for (const ex of unlinkedExamples) {
+          lines.push(`- **${ex.title}** (${ex.type})`);
+          if (ex.whySeeThisOrWhenToUseThis) lines.push(`  *Context:* ${ex.whySeeThisOrWhenToUseThis}`);
+          if (ex.verifiedUrl) lines.push(`  *Source Link:* [${ex.verifiedUrl}](${ex.verifiedUrl})`);
         }
         lines.push("");
       }
-    } else {
-      lines.push(`*No specific peer learning examples linked to this priority in the repository.*`);
-    }
-    lines.push(`---\n`);
-
-    // =========================================================================
-    // SECTION D: Relevant Tools and Resources
-    // =========================================================================
-    lines.push(`## Section D: Relevant Tools and Resources`);
-    if (b.sectionD_ToolsAndResources) {
-      if (b.sectionD_ToolsAndResources.tools.length > 0) {
+      if (unlinkedTools.length > 0) {
         lines.push(`### Tools & Technical Instruments:`);
-        for (const t of b.sectionD_ToolsAndResources.tools) {
+        for (const t of unlinkedTools) {
           lines.push(`- **${t.title}**`);
           if (t.whySeeThisOrWhenToUseThis) lines.push(`  *When to use:* ${t.whySeeThisOrWhenToUseThis}`);
-          if (t.fullText) lines.push(`  ${t.fullText}`);
-          if (t.verifiedUrl) lines.push(`  *Official Tool Link:* [${t.verifiedUrl}](${t.verifiedUrl})`);
+          if (t.verifiedUrl) lines.push(`  *Tool Link:* [${t.verifiedUrl}](${t.verifiedUrl})`);
         }
         lines.push("");
       }
-
-      if (b.sectionD_ToolsAndResources.additionalResources.length > 0) {
+      if (additionalResources.length > 0) {
         lines.push(`### Additional Studies & Guides:`);
-        for (const ar of b.sectionD_ToolsAndResources.additionalResources) {
+        for (const ar of additionalResources) {
           lines.push(`- **${ar.title}**${ar.publisher ? ` (${ar.publisher})` : ""}`);
           if (ar.description) lines.push(`  ${ar.description}`);
           if (ar.verifiedLink) lines.push(`  *Link:* [${ar.verifiedLink}](${ar.verifiedLink})`);
         }
         lines.push("");
       }
-
-      if (b.sectionD_ToolsAndResources.conceptBoxes.length > 0) {
+      if (conceptBoxes.length > 0) {
         lines.push(`### Concept & Explainer Boxes:`);
-        for (const cb of b.sectionD_ToolsAndResources.conceptBoxes) {
+        for (const cb of conceptBoxes) {
           lines.push(`- **${cb.title}** (${cb.category || "Core Concept"})`);
           if (cb.fullText) lines.push(`  ${cb.fullText}`);
           else if (cb.excerpt) lines.push(`  ${cb.excerpt}`);
@@ -1896,29 +1929,26 @@ export class ChampToolsService {
         }
         lines.push("");
       }
+      lines.push(`---\n`);
     }
-    lines.push(`---\n`);
 
-    // =========================================================================
-    // SECTION E: Country Journey Evidence
-    // =========================================================================
-    lines.push(`## Section E: Country Journey Evidence`);
+    // Country Journey Evidence
     if (b.sectionE_CountryJourneyEvidence?.evidence) {
       const c = b.sectionE_CountryJourneyEvidence.evidence;
-      lines.push(`### Documented Journey for ${c.countryName} (Status: Available)`);
+      lines.push(`## Country Journey Evidence: ${c.countryName} (Status: Available)\n`);
       if (c.summary) lines.push(`${c.summary}\n`);
 
       if (c.contextSections && c.contextSections.length > 0) {
         for (const cs of c.contextSections) {
-          lines.push(`#### Context: ${cs.title}`);
+          lines.push(`### Context: ${cs.title}`);
           lines.push(`${cs.content}\n`);
         }
       }
 
       if (c.mappedActions && c.mappedActions.length > 0) {
-        lines.push(`#### Mapped Action Experiences:`);
+        lines.push(`### Mapped Action Experiences:`);
         for (const ma of c.mappedActions) {
-          lines.push(`##### ${ma.title}`);
+          lines.push(`#### ${ma.title}`);
           lines.push(`${ma.content}\n`);
           if (ma.caseStudyTitle) {
             lines.push(`**Case Study: ${ma.caseStudyTitle}**`);
@@ -1927,24 +1957,87 @@ export class ChampToolsService {
         }
       }
     } else if (b.sectionE_CountryJourneyEvidence?.evidenceMessage) {
+      lines.push(`## Country Journey Evidence\n`);
       lines.push(`> **Notice:** ${b.sectionE_CountryJourneyEvidence.evidenceMessage}\n`);
     } else if (b.selectedCountry) {
-      lines.push(`> **Notice:** This is not specified in the available CHAMP Toolkit content. Country '${b.selectedCountry.countryName}' has no published deep-dive evidence in the repository.\n`);
-    } else {
-      lines.push(`> *No country was specified for this query. The guidance above reflects global CHAMP Toolkit evidence.*\n`);
+      lines.push(`## Country Journey Evidence\n`);
+      lines.push(
+        `> **Notice:** This is not specified in the available CHAMP Toolkit content. Country '${b.selectedCountry.countryName}' has no published deep-dive evidence in the repository.\n`
+      );
     }
-    lines.push(`---\n`);
 
-    // =========================================================================
-    // SECTION F: Optional Brief Synthesis
-    // =========================================================================
-    lines.push(`## Section F: Optional Brief Synthesis`);
-    lines.push(`### ${b.sectionF_Synthesis?.label || "Assistant synthesis based on the cited CHAMP sources"}`);
-    lines.push(`*Notice: ${b.sectionF_Synthesis?.disclaimer || "This synthesis is strictly derived from the official records cited above and introduces no independent policy prescriptions."}*\n`);
-    lines.push(`${b.sectionF_Synthesis?.synthesisContent || "All implementation should strictly adhere to the official guidance steps cited in Section A."}\n`);
-
-    return lines.join("\n");
+    const validation = validateSourcePreservingContent(lines.join("\n"));
+    return validation.sanitizedText;
   }
+}
+
+export interface ValidationResult {
+  isValid: boolean;
+  violations: string[];
+  sanitizedText: string;
+}
+
+/**
+ * Validates output text against model-generated planning artifacts (phases, roadmaps, deliverables, timelines).
+ * Enforces the core rule: KNOWLEDGE SYNTHESIS IS ALLOWED. IMPLEMENTATION PLAN SYNTHESIS IS NOT ALLOWED.
+ */
+export function validateSourcePreservingContent(text: string): ValidationResult {
+  const violations: string[] = [];
+
+  const prohibitedPatterns = [
+    { pattern: /(?:^|\n)\s*(?:#+\s*)?Phase\s+[1-4]\b|\bPhase\s+[1-4]\s*[-—:]/i, name: "Phase 1/2/3/4" },
+    { pattern: /\b(?:suggested|proposed|recommended|draft|annual|action|new)\s+(?:implementation\s+)?roadmap\b|(?:\n|^)\s*#+\s*.*roadmap/i, name: "Implementation roadmap" },
+    { pattern: /(?:^|\n)\s*(?:[-*]\s*)?Deliverables\s*:/i, name: "Deliverables:" },
+    { pattern: /\bSynthesized\s+planning\s+sequence\b/i, name: "Synthesized planning sequence" },
+    { pattern: /\bProposed\s+workplan\b/i, name: "Proposed workplan" },
+    { pattern: /\b(?:30|60|90)-day\s+plan\b/i, name: "30/60/90-day plan" },
+    { pattern: /\b12-month\s+plan\b/i, name: "12-month plan" },
+    { pattern: /\bProposed\s+implementation\s+strategy\b/i, name: "Proposed implementation strategy" }
+  ];
+
+  for (const { pattern, name } of prohibitedPatterns) {
+    if (pattern.test(text)) {
+      violations.push(name);
+    }
+  }
+
+  let sanitizedText = text;
+  if (violations.length > 0) {
+    // Sanitize any model-generated planning blocks
+    sanitizedText = sanitizedText
+      .replace(
+        /\b(?:Suggested\s+(?:[A-Za-z\s]+)?roadmap|Synthesized\s+planning\s+sequence|Proposed\s+workplan)[\s\S]*?(?=\n##|\n#|$)/gi,
+        ""
+      )
+      .trim();
+  }
+
+  return {
+    isValid: violations.length === 0,
+    violations,
+    sanitizedText
+  };
+}
+
+/**
+ * Formats a clear, polite refusal and source redirection when a user explicitly requests an implementation roadmap or workplan.
+ */
+export function formatPlanningRefusalResponse(params: {
+  topic?: string;
+  lead?: string;
+  action_id?: number;
+}): string {
+  return [
+    `# CHAMP Toolkit Source Grounding Notice`,
+    ``,
+    `The CHAMP Toolkit provides guidance and implementation steps, but does not prescribe planning roadmaps, workplans, multi-stage project phases, milestones, or artificial deliverables.`,
+    ``,
+    `Instead, the CHAMP Airtable knowledge base provides substantive implementation guidance and transferability considerations organized as distinct, parallel Pathways under each CHAMP Action. Pathways represent documented approaches to adapt locally rather than a prescriptive linear planning sequence.`,
+    ``,
+    `Implementation steps remain attached to their originating Pathway and are not combined into a cross-pathway implementation sequence.`,
+    ``,
+    `The relevant CHAMP Pathways and their documented guidance are presented below as reference source material.`
+  ].join("\n");
 }
 
 export const defaultToolsService = new ChampToolsService();

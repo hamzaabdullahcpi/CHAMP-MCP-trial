@@ -335,6 +335,7 @@ export interface PersonalisedBriefing {
   }[];
   sectionC_PeerLearningExamples?: {
     recordId: string;
+    pathwayRecordId?: string;
     title: string;
     type: string;
     whySeeThisOrWhenToUseThis?: string;
@@ -354,6 +355,7 @@ export interface PersonalisedBriefing {
   sectionD_ToolsAndResources?: {
     tools: {
       recordId: string;
+      pathwayRecordId?: string;
       title: string;
       whySeeThisOrWhenToUseThis?: string;
       fullText?: string;

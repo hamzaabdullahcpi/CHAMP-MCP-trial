@@ -8,7 +8,12 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import { defaultAirtableClient, ChampAirtableClient } from "../src/mcp/airtableClient";
-import { defaultToolsService, ChampToolsService } from "../src/mcp/tools";
+import {
+  defaultToolsService,
+  ChampToolsService,
+  validateSourcePreservingContent,
+  formatPlanningRefusalResponse
+} from "../src/mcp/tools";
 import { createChampMcpServer } from "../src/mcp/server";
 
 let totalTests = 0;
@@ -765,6 +770,104 @@ async function runTestSuite() {
     const pathwayContent = JSON.parse(mcpToolExecJson.result.content[0].text);
     assert(pathwayContent.pathway.recordId === "recRTFUoxTWXKiQFA", "QA 10.10: MCP tool execution faithfully returns Pathway 3.3 record");
     assert(pathwayContent.pathway.implementationGuidance.length === 4, "QA 10.10: MCP tool execution faithfully returns 4 verbatim steps");
+
+    // -------------------------------------------------------------------------
+    // Test Group 11: Regression Tests for Planning-Artifact Prohibition (Required Change 7)
+    // -------------------------------------------------------------------------
+    console.log("\n▶ Test Group 11: Regression Tests for Planning-Artifact Prohibition");
+
+    // Test 11.1: Finance Ministry official query without roadmaps/phases/deliverables
+    console.log("  ▶ QA 11.1: Query: 'I\\'m a Finance Ministry official. My cities have climate projects but cannot access suitable funding. What should I do?'");
+    const fmGuidance = await tools.getGuidanceByNationalLead({
+      national_lead: "Finance Ministry",
+      action_id: 3
+    });
+    assert(fmGuidance.success === true, "QA 11.1: Guidance retrieved successfully");
+    const fmBriefingText = fmGuidance.markdownBriefing || "";
+    assert(fmBriefingText.includes("Pathway: 3.1") || fmBriefingText.includes("3.1"), "QA 11.1: Includes relevant Pathway 3.1");
+    // Also verify Action 4 (Mobilize Finance) for Finance Ministry
+    const fmGuidance4 = await tools.getGuidanceByNationalLead({
+      national_lead: "Finance Ministry",
+      action_id: 4
+    });
+    assert(fmGuidance4.success === true, "QA 11.1: Action 4 guidance retrieved successfully");
+    assert(fmGuidance4.markdownBriefing?.includes("4.1"), "QA 11.1: Includes relevant Pathway 4.1");
+    assert(fmGuidance4.markdownBriefing?.includes("4.2"), "QA 11.1: Includes relevant Pathway 4.2");
+    assert(fmGuidance4.markdownBriefing?.includes("4.3"), "QA 11.1: Includes relevant Pathway 4.3");
+
+    assert(fmBriefingText.includes("#### 1. Overview"), "QA 11.1: Includes Pathway Overview section");
+    assert(fmBriefingText.includes("#### 2. Implementation Guidance (Documented Steps)"), "QA 11.1: Includes Documented Implementation Steps");
+    assert(fmBriefingText.includes("#### 3. Transferability Considerations"), "QA 11.1: Includes Transferability Considerations");
+
+    // Check automated validation layer on output
+    const fmValidation = validateSourcePreservingContent(fmBriefingText);
+    assert(fmValidation.isValid === true, "QA 11.1: Output passes automated validation check");
+    assert(fmValidation.violations.length === 0, "QA 11.1: Output has 0 planning artifact violations");
+    assert(!fmBriefingText.includes("Phase 1"), "QA 11.1: Output does not contain Phase 1");
+    assert(!fmBriefingText.includes("Phase 2"), "QA 11.1: Output does not contain Phase 2");
+    assert(!fmBriefingText.includes("Phase 3"), "QA 11.1: Output does not contain Phase 3");
+    assert(!fmBriefingText.includes("Phase 4"), "QA 11.1: Output does not contain Phase 4");
+    assert(!fmBriefingText.toLowerCase().includes("implementation roadmap"), "QA 11.1: Output does not contain 'implementation roadmap'");
+    assert(!fmBriefingText.toLowerCase().includes("suggested roadmap"), "QA 11.1: Output does not contain 'suggested roadmap'");
+    assert(!fmBriefingText.toLowerCase().includes("deliverables:"), "QA 11.1: Output does not contain 'deliverables:'");
+
+    // Test 11.2: Refusal of suggested 4-phase roadmap
+    console.log("  ▶ QA 11.2: Query: 'Give me a suggested four-phase Finance Ministry roadmap based on the CHAMP Toolkit.'");
+    const roadmapRefusal = formatPlanningRefusalResponse({
+      topic: "four-phase roadmap",
+      lead: "Finance Ministry",
+      action_id: 3
+    });
+    assert(
+      roadmapRefusal.includes("does not prescribe") && (roadmapRefusal.includes("roadmaps") || roadmapRefusal.includes("phases")),
+      "QA 11.2: Output politely refuses to generate an implementation roadmap or phases"
+    );
+    assert(
+      roadmapRefusal.includes("distinct, parallel Pathways") || roadmapRefusal.includes("Pathways under each CHAMP Action"),
+      "QA 11.2: Clarifies that guidance is organized by pathway, not planning sequences"
+    );
+    const roadmapValidation = validateSourcePreservingContent(roadmapRefusal);
+    assert(roadmapValidation.isValid === true, "QA 11.2: Refusal response passes automated validation check");
+    assert(!roadmapRefusal.includes("Phase 1 — Establish the baseline"), "QA 11.2: No generated Phase 1 timeline");
+    assert(!roadmapRefusal.includes("Deliverables:"), "QA 11.2: No deliverables matrix generated");
+
+    // Test 11.3: Refusal to combine pathways into one implementation plan
+    console.log("  ▶ QA 11.3: Query: 'Combine the six relevant Pathways into one implementation plan.'");
+    const combineRefusal = formatPlanningRefusalResponse({
+      topic: "combine pathways into one plan",
+      lead: "Finance Ministry"
+    });
+    assert(
+      combineRefusal.includes("Implementation steps remain attached to their originating Pathway") ||
+      combineRefusal.includes("not combined into a cross-pathway implementation sequence"),
+      "QA 11.3: Refuses to merge pathways into a single cross-pathway implementation sequence"
+    );
+    assert(
+      combineRefusal.includes("distinct, parallel Pathways"),
+      "QA 11.3: Preserves pathways as distinct, parallel approaches"
+    );
+    const combineValidation = validateSourcePreservingContent(combineRefusal);
+    assert(combineValidation.isValid === true, "QA 11.3: Refusal passes validation without generated plan");
+
+    // Test 11.4: Factual summary of existing guidance without imposing sequence or planning phases
+    console.log("  ▶ QA 11.4: Query: 'Summarise the key implementation guidance from the relevant Pathways.'");
+    const p31 = await tools.getToolkitPathway({ pathway_identifier: "3.1" });
+    const p33 = await tools.getToolkitPathway({ pathway_identifier: "3.3" });
+    assert(p31.found === true && p33.found === true, "QA 11.4: Relevant pathways retrieved");
+    // Build factual summary of guidance steps from retrieved Airtable records
+    const summaryLines = [
+      `### Factual Summary of Retrieved CHAMP Implementation Guidance`,
+      `**Pathway 3.1 (${p31.pathway.pathwayTitle}):**`,
+      ...p31.pathway.implementationGuidance.map((g: any) => `- Step ${g.stepOrder}: ${g.stepTitle}`),
+      `**Pathway 3.3 (${p33.pathway.pathwayTitle}):**`,
+      ...p33.pathway.implementationGuidance.map((g: any) => `- Step ${g.stepOrder}: ${g.stepTitle}`)
+    ];
+    const factualSummary = summaryLines.join("\n");
+    assert(factualSummary.includes("Step 1:"), "QA 11.4: Summary contains documented steps");
+    assert(!factualSummary.includes("Phase 1"), "QA 11.4: Summary does not impose chronological phases");
+    assert(!factualSummary.includes("Deliverables:"), "QA 11.4: Summary does not impose deliverables");
+    const summaryValidation = validateSourcePreservingContent(factualSummary);
+    assert(summaryValidation.isValid === true, "QA 11.4: Summary passes automated validation check");
 
   } finally {
     testServer.close();
