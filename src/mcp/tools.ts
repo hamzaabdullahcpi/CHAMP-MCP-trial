@@ -150,23 +150,23 @@ export class ChampToolsService {
         }
 
         const s = scoreText(
-          `${p.pathwayTitle} ${p.whatItIs || ""} ${p.whyItIsNeeded || ""} ${p.overview || ""} ${p.potentialNationalLead.join(" ")} ${p.keyActors.join(" ")} ${p.enablingConditions.join(" ")}`
+          `${p.pathwayTitle} ${p.overview || ""} ${p.potentialNationalLead.join(" ")} ${p.keyActors.join(" ")}`
         );
         if (s > 0) {
           results.push({
             type: "CHAMP Pathway",
             table: "Pathways",
             recordId: p.id,
-            field: "Pathway Title, What it is, Why it is needed, Overview",
+            field: "Pathway Title, Overview",
             actionNumber: parentAction?.actionNumber,
             actionTitle: parentAction?.title,
             title: p.pathwayTitle,
-            exactText: p.whatItIs || p.whyItIsNeeded || p.overview || p.pathwayTitle,
+            exactText: p.overview || p.pathwayTitle,
+            overview: p.overview,
             whatItIs: p.whatItIs,
             whyItIsNeeded: p.whyItIsNeeded,
             potentialNationalLead: p.potentialNationalLead,
             keyActors: p.keyActors,
-            enablingConditions: p.enablingConditions,
             verifiedUrl: undefined,
             evidenceLevel: "official_toolkit",
             score: s + 8
@@ -576,7 +576,7 @@ export class ChampToolsService {
       sourceType: "Pathway Definition",
       table: "Pathways",
       recordId: pathway.id,
-      fieldName: "Pathway Title, What it is, Why it is needed",
+      fieldName: "Pathway Title, Overview",
       entityTitle: pathway.pathwayTitle,
       evidenceLevel: "official_toolkit"
     });
@@ -644,37 +644,30 @@ export class ChampToolsService {
       });
     }
 
-    // Format strict source-grounded Markdown text
+    // Format clean, source-grounded Markdown text with natural citations
     const textLines: string[] = [];
     textLines.push(`# Official CHAMP Toolkit Guidance: ${pathway.pathwayTitle}`);
     if (parentAction) {
-      textLines.push(`**Parent Action:** Action ${parentAction.actionNumber}: ${parentAction.title} (Record ID: \`${parentAction.id}\`)`);
+      textLines.push(`**Parent Action:** Action ${parentAction.actionNumber}: ${parentAction.title}`);
       textLines.push(`> "${parentAction.description}"\n`);
     }
-    textLines.push(`**Airtable Record ID:** \`${pathway.id}\``);
     textLines.push(`**Potential National Lead:** ${pathway.potentialNationalLead.join(", ") || "General Multilevel Governance"}`);
     textLines.push(`**Key Actors:** ${pathway.keyActors.join(", ") || "Multi-stakeholder"}`);
-    if (pathway.whatItIs) textLines.push(`\n**What It Is:**\n> "${pathway.whatItIs}"`);
-    if (pathway.whyItIsNeeded) textLines.push(`\n**Why It Is Needed:**\n> "${pathway.whyItIsNeeded}"`);
-    if (pathway.enablingConditions.length > 0) {
-      textLines.push(`\n**Enabling Conditions:**`);
-      pathway.enablingConditions.forEach((ec) => textLines.push(`- ${ec}`));
+    if (pathway.overview) {
+      textLines.push(`\n**Overview:**\n${pathway.overview}\n`);
     }
-    textLines.push(`\n---\n`);
+    textLines.push(`---\n`);
 
     // Section A
     textLines.push(`## Section A: Official CHAMP Toolkit Guidance (Implementation Steps)`);
-    textLines.push(`*Source: Airtable 'Implementation Guidance' table, reproduced verbatim in official sequence.*`);
     for (const g of linkedGuidance) {
       textLines.push(`\n### Step ${g.stepOrder}: ${g.stepTitle}`);
-      textLines.push(`*Airtable Record ID: \`${g.recordId}\`, Field: 'Detailed Content'*`);
       textLines.push(`> "${g.detailedContent}"`);
     }
     textLines.push(`\n---\n`);
 
     // Section B
     textLines.push(`## Section B: How to Adapt This Pathway to Your Context`);
-    textLines.push(`*Source: Airtable 'Pathways' table (Record ID: \`${pathway.id}\`), Field: 'Transferability Considerations'*`);
     if (pathway.transferabilityPreamble) textLines.push(`*${pathway.transferabilityPreamble}*`);
     for (const tc of pathway.transferability) {
       textLines.push(`- ${tc}`);
@@ -687,13 +680,12 @@ export class ChampToolsService {
     if (peerExamples.length > 0) {
       for (const pe of peerExamples) {
         textLines.push(`\n### ${pe.exampleTitle} (${pe.type})`);
-        textLines.push(`*Airtable Record ID: \`${pe.recordId}\`*`);
         if (pe.whySeeThisOrWhenToUseThis) textLines.push(`*Context:* ${pe.whySeeThisOrWhenToUseThis}`);
         if (pe.fullText) textLines.push(`> "${pe.fullText}"`);
         else if (pe.excerpt) textLines.push(`> "${pe.excerpt}"`);
         if (pe.learnMoreUrl) textLines.push(`*Official Link:* [${pe.learnMoreUrl}](${pe.learnMoreUrl})`);
         for (const sub of pe.subExamples) {
-          textLines.push(`\n- **Sub-Example: ${sub.title}** (Record ID: \`${sub.recordId}\`)`);
+          textLines.push(`\n- **Sub-Example: ${sub.title}**`);
           if (sub.fullText) textLines.push(`  ${sub.fullText}`);
           else if (sub.excerpt) textLines.push(`  ${sub.excerpt}`);
           if (sub.learnMoreUrl) textLines.push(`  *Link:* [${sub.learnMoreUrl}](${sub.learnMoreUrl})`);
@@ -710,7 +702,7 @@ export class ChampToolsService {
     if (toolsList.length > 0) {
       textLines.push(`\n### Tools & Technical Instruments:`);
       for (const t of toolsList) {
-        textLines.push(`- **${t.exampleTitle}** (Record ID: \`${t.recordId}\`)`);
+        textLines.push(`- **${t.exampleTitle}**`);
         if (t.whySeeThisOrWhenToUseThis) textLines.push(`  *Purpose:* ${t.whySeeThisOrWhenToUseThis}`);
         if (t.fullText) textLines.push(`  ${t.fullText}`);
         if (t.learnMoreUrl) textLines.push(`  *Official Tool Link:* [${t.learnMoreUrl}](${t.learnMoreUrl})`);
@@ -719,7 +711,7 @@ export class ChampToolsService {
     if (linkedAdditionalResources.length > 0) {
       textLines.push(`\n### Additional Studies & Guides:`);
       for (const ar of linkedAdditionalResources) {
-        textLines.push(`- **${ar.resourceTitle}**${ar.publisherOrOrganization ? ` (${ar.publisherOrOrganization})` : ""} (Record ID: \`${ar.recordId}\`)`);
+        textLines.push(`- **${ar.resourceTitle}**${ar.publisherOrOrganization ? ` (${ar.publisherOrOrganization})` : ""}`);
         if (ar.description) textLines.push(`  ${ar.description}`);
         if (ar.resourceLink) textLines.push(`  *Link:* [${ar.resourceLink}](${ar.resourceLink})`);
       }
@@ -727,19 +719,11 @@ export class ChampToolsService {
     if (linkedConceptBoxes.length > 0) {
       textLines.push(`\n### Concept & Explainer Boxes:`);
       for (const cb of linkedConceptBoxes) {
-        textLines.push(`- **${cb.boxTitle}** (${cb.category || "Core Concept"}) (Record ID: \`${cb.recordId}\`)`);
+        textLines.push(`- **${cb.boxTitle}** (${cb.category || "Core Concept"})`);
         if (cb.fullText) textLines.push(`  ${cb.fullText}`);
         else if (cb.excerpt) textLines.push(`  ${cb.excerpt}`);
         if (cb.learnMoreUrl) textLines.push(`  *Link:* [${cb.learnMoreUrl}](${cb.learnMoreUrl})`);
       }
-    }
-    textLines.push(`\n---\n`);
-
-    textLines.push(`## Field-Level Provenance & Citations Table`);
-    textLines.push(`| Source Type | Table | Record ID | Field Name | Entity Title | Verified Link |`);
-    textLines.push(`|---|---|---|---|---|---|`);
-    for (const pr of provenanceList) {
-      textLines.push(`| ${pr.sourceType} | ${pr.table} | \`${pr.recordId}\` | ${pr.fieldName} | ${String(pr.entityTitle).replace(/\|/g, "-")} | ${pr.verifiedUrl ? `[Link](${pr.verifiedUrl})` : "—"} |`);
     }
 
     const formattedSourceText = textLines.join("\n");
@@ -751,6 +735,7 @@ export class ChampToolsService {
         table: "Pathways",
         pathwayTitle: pathway.pathwayTitle,
         order: pathway.order,
+        overview: pathway.overview,
         parentAction: parentAction
           ? {
               actionNumber: parentAction.actionNumber,
@@ -1544,6 +1529,7 @@ export class ChampToolsService {
           recordId: p.id,
           pathwayTitle: p.pathwayTitle,
           order: p.order,
+          overview: p.overview,
           whatItIs: p.whatItIs,
           whyItIsNeeded: p.whyItIsNeeded,
           potentialNationalLead: p.potentialNationalLead,
@@ -1797,7 +1783,6 @@ export class ChampToolsService {
     // =========================================================================
     lines.push(`## Section A: Official CHAMP Toolkit Guidance`);
     lines.push(`### Action ${b.sectionA_SelectedAction.actionNumber}: ${b.sectionA_SelectedAction.title}`);
-    lines.push(`*Source: Airtable \`Actions\` table (Record ID: \`${b.sectionA_SelectedAction.recordId}\`)*\n`);
     lines.push(`> "${b.sectionA_SelectedAction.description}"\n`);
     if (b.sectionA_SelectedAction.systemsLogic) {
       lines.push(`**Systems Logic:**\n> "${b.sectionA_SelectedAction.systemsLogic}"\n`);
@@ -1806,20 +1791,10 @@ export class ChampToolsService {
     if (b.sectionA_OfficialGuidance?.pathways) {
       for (const p of b.sectionA_OfficialGuidance.pathways) {
         lines.push(`### Pathway: ${p.pathwayTitle}`);
-        lines.push(`*Source: Airtable \`Pathways\` table (Record ID: \`${p.recordId}\`)*`);
         lines.push(`- **National Lead Designation:** ${p.isDirectNationalLeadMatch ? `Explicit match for **${b.normalizedNationalLead}**` : `General Action pathway (Designated leads: ${p.potentialNationalLead.join(", ")})`}`);
         lines.push(`- **Key Actors:** ${p.keyActors.join(", ") || "Multi-stakeholder"}`);
-        if (p.whatItIs) {
-          lines.push(`- **What It Is:** > "${p.whatItIs}"`);
-        }
-        if (p.whyItIsNeeded) {
-          lines.push(`- **Why It Is Needed:** > "${p.whyItIsNeeded}"`);
-        }
-        if (p.enablingConditions && p.enablingConditions.length > 0) {
-          lines.push(`- **Enabling Conditions:**`);
-          for (const ec of p.enablingConditions) {
-            lines.push(`  - ${ec}`);
-          }
+        if (p.overview) {
+          lines.push(`\n**Pathway Overview:**\n${p.overview}\n`);
         }
 
         lines.push(`\n#### Official Implementation Guidance (Verbatim in Sequence):`);
@@ -1828,7 +1803,6 @@ export class ChampToolsService {
         } else {
           for (const s of p.implementationSteps) {
             lines.push(`##### Step ${s.stepOrder}: ${s.stepTitle}`);
-            lines.push(`*Source: Airtable \`Implementation Guidance\` table (Record ID: \`${s.recordId}\`), Field: \`Detailed Content\`*`);
             lines.push(`> "${s.detailedContent}"\n`);
           }
         }
@@ -1840,11 +1814,9 @@ export class ChampToolsService {
     // SECTION B: How to Adapt This Pathway to Your Context
     // =========================================================================
     lines.push(`## Section B: How to Adapt This Pathway to Your Context`);
-    lines.push(`*Source: Airtable \`Pathways\` table, Field: \`Transferability Considerations\` (reproduced verbatim)*\n`);
     if (b.sectionB_AdaptationTransferability && b.sectionB_AdaptationTransferability.length > 0) {
       for (const tc of b.sectionB_AdaptationTransferability) {
         lines.push(`### ${tc.pathwayTitle}`);
-        lines.push(`*Record ID: \`${tc.pathwayRecordId}\`*`);
         if (tc.preamble) {
           lines.push(`*${tc.preamble}*`);
         }
@@ -1866,18 +1838,16 @@ export class ChampToolsService {
     // SECTION C: Peer Learning Examples
     // =========================================================================
     lines.push(`## Section C: Peer Learning Examples`);
-    lines.push(`*Source: Airtable \`Key Resources\` and \`Sub-Examples\` tables*\n`);
     if (b.sectionC_PeerLearningExamples && b.sectionC_PeerLearningExamples.length > 0) {
       for (const ex of b.sectionC_PeerLearningExamples) {
         lines.push(`### ${ex.title} (${ex.type})`);
-        lines.push(`*Record ID: \`${ex.recordId}\`*`);
         if (ex.whySeeThisOrWhenToUseThis) lines.push(`*Contextual Guidance:* ${ex.whySeeThisOrWhenToUseThis}`);
         if (ex.fullText) lines.push(`> "${ex.fullText}"`);
         else if (ex.excerpt) lines.push(`> "${ex.excerpt}"`);
         if (ex.verifiedUrl) lines.push(`*Official Source Link:* [${ex.verifiedUrl}](${ex.verifiedUrl})`);
         if (ex.subExamples && ex.subExamples.length > 0) {
           for (const sub of ex.subExamples) {
-            lines.push(`\n- **Sub-Example: ${sub.title}** (Record ID: \`${sub.recordId}\`)`);
+            lines.push(`\n- **Sub-Example: ${sub.title}**`);
             if (sub.fullText) lines.push(`  ${sub.fullText}`);
             else if (sub.excerpt) lines.push(`  ${sub.excerpt}`);
             if (sub.verifiedUrl) lines.push(`  *Link:* [${sub.verifiedUrl}](${sub.verifiedUrl})`);
@@ -1894,12 +1864,11 @@ export class ChampToolsService {
     // SECTION D: Relevant Tools and Resources
     // =========================================================================
     lines.push(`## Section D: Relevant Tools and Resources`);
-    lines.push(`*Source: Airtable \`Key Resources\`, \`Additional Resources\`, and \`Concept & Explainer Boxes\`*\n`);
     if (b.sectionD_ToolsAndResources) {
       if (b.sectionD_ToolsAndResources.tools.length > 0) {
         lines.push(`### Tools & Technical Instruments:`);
         for (const t of b.sectionD_ToolsAndResources.tools) {
-          lines.push(`- **${t.title}** (Record ID: \`${t.recordId}\`)`);
+          lines.push(`- **${t.title}**`);
           if (t.whySeeThisOrWhenToUseThis) lines.push(`  *When to use:* ${t.whySeeThisOrWhenToUseThis}`);
           if (t.fullText) lines.push(`  ${t.fullText}`);
           if (t.verifiedUrl) lines.push(`  *Official Tool Link:* [${t.verifiedUrl}](${t.verifiedUrl})`);
@@ -1910,7 +1879,7 @@ export class ChampToolsService {
       if (b.sectionD_ToolsAndResources.additionalResources.length > 0) {
         lines.push(`### Additional Studies & Guides:`);
         for (const ar of b.sectionD_ToolsAndResources.additionalResources) {
-          lines.push(`- **${ar.title}**${ar.publisher ? ` (${ar.publisher})` : ""} (Record ID: \`${ar.recordId}\`)`);
+          lines.push(`- **${ar.title}**${ar.publisher ? ` (${ar.publisher})` : ""}`);
           if (ar.description) lines.push(`  ${ar.description}`);
           if (ar.verifiedLink) lines.push(`  *Link:* [${ar.verifiedLink}](${ar.verifiedLink})`);
         }
@@ -1920,7 +1889,7 @@ export class ChampToolsService {
       if (b.sectionD_ToolsAndResources.conceptBoxes.length > 0) {
         lines.push(`### Concept & Explainer Boxes:`);
         for (const cb of b.sectionD_ToolsAndResources.conceptBoxes) {
-          lines.push(`- **${cb.title}** (${cb.category || "Core Concept"}) (Record ID: \`${cb.recordId}\`)`);
+          lines.push(`- **${cb.title}** (${cb.category || "Core Concept"})`);
           if (cb.fullText) lines.push(`  ${cb.fullText}`);
           else if (cb.excerpt) lines.push(`  ${cb.excerpt}`);
           if (cb.verifiedLink) lines.push(`  *Link:* [${cb.verifiedLink}](${cb.verifiedLink})`);
@@ -1934,7 +1903,6 @@ export class ChampToolsService {
     // SECTION E: Country Journey Evidence
     // =========================================================================
     lines.push(`## Section E: Country Journey Evidence`);
-    lines.push(`*Source: Airtable \`Country Journeys\`, \`Country Sections\`, and \`Country Actions\`*\n`);
     if (b.sectionE_CountryJourneyEvidence?.evidence) {
       const c = b.sectionE_CountryJourneyEvidence.evidence;
       lines.push(`### Documented Journey for ${c.countryName} (Status: Available)`);
@@ -1974,23 +1942,6 @@ export class ChampToolsService {
     lines.push(`### ${b.sectionF_Synthesis?.label || "Assistant synthesis based on the cited CHAMP sources"}`);
     lines.push(`*Notice: ${b.sectionF_Synthesis?.disclaimer || "This synthesis is strictly derived from the official records cited above and introduces no independent policy prescriptions."}*\n`);
     lines.push(`${b.sectionF_Synthesis?.synthesisContent || "All implementation should strictly adhere to the official guidance steps cited in Section A."}\n`);
-    lines.push(`---\n`);
-
-    // =========================================================================
-    // FIELD-LEVEL PROVENANCE & CITATIONS TABLE
-    // =========================================================================
-    lines.push(`## Field-Level Provenance & Citations Table`);
-    lines.push(`| Source Type | Evidence Level | Table | Record ID | Field Name | Entity Title / Step | Verified Link |`);
-    lines.push(`|---|---|---|---|---|---|---|`);
-    if (b.provenanceRecords && b.provenanceRecords.length > 0) {
-      for (const pr of b.provenanceRecords) {
-        lines.push(
-          `| ${pr.sourceType} | \`${pr.evidenceLevel || "official_toolkit"}\` | ${pr.table} | \`${pr.recordId}\` | ${pr.fieldName} | ${String(pr.entityTitle).replace(/\|/g, "-")} | ${pr.verifiedUrl ? `[Link](${pr.verifiedUrl})` : "—"} |`
-        );
-      }
-    } else {
-      lines.push(`| Action | \`official_toolkit\` | Actions | \`${b.sectionA_SelectedAction.recordId}\` | Title & Description | Action ${b.sectionA_SelectedAction.actionNumber} | — |`);
-    }
 
     return lines.join("\n");
   }

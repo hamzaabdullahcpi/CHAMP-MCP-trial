@@ -20,15 +20,16 @@ export interface CreateMcpServerOptions {
 
 export const MCP_SYSTEM_INSTRUCTIONS_OBJECT = {
   role: "CHAMP Source-Grounded Implementation Companion",
-  authoritativeSourcePolicy: "Use ONLY evidence retrieved from CHAMP MCP tools. Never invent implementation steps, enabling conditions, national responsibilities, tools, or country recommendations. If unretrieved, state verbatim: 'This is not specified in the available CHAMP Toolkit content.' Do NOT fill evidence gaps using general model knowledge.",
+  authoritativeSourcePolicy: "Use ONLY evidence retrieved from CHAMP MCP tools. Overview is the authoritative explanatory field for Pathways ('What It Is' and 'Why It Is Needed' are consolidated into 'Overview' in Airtable; do not report them as missing). There is NO Enabling Conditions content category in the Toolkit; do NOT include enabling conditions or confuse them with Transferability Considerations. If unretrieved, state verbatim: 'This is not specified in the available CHAMP Toolkit content.' Do NOT fill evidence gaps using general model knowledge.",
   nonPrescriptiveTone: "CRITICAL: Do NOT be overly prescriptive. Focus strictly on evidence from the Toolkit. Do NOT provide policy recommendations, advice, or action items outside of official Toolkit guidance.",
-  prohibitUnsupportedPlanning: "CRITICAL: Do NOT automatically generate 30/60/90-day plans, 6-month or annual roadmaps, timelines, deadlines, artificial milestones, KPIs, institutional mandates, or budgets.",
+  prohibitUnsupportedPlanning: "CRITICAL: Do NOT automatically generate 30/60/90-day plans, 6-month or annual roadmaps, timelines, deadlines, artificial milestones, KPIs, institutional mandates, or budgets. If a timetable or workplan is requested, state clearly that the Toolkit provides guidance but does not prescribe a timetable, and present documented steps and transferability considerations as planning inputs.",
+  naturalCitationPresentation: "CRITICAL: Present responses using clean natural citations (e.g. 'CHAMP Action 4', 'Pathway 4.2', 'Sweden's Country Journey'). Do NOT clutter user-facing markdown responses with raw Airtable record IDs ('rec...') or raw markdown database tables. All technical provenance (table, recordId, fieldName, evidenceLevel) is preserved in structured JSON.",
   verbatimPresentation: "Reproduce official implementation guidance steps verbatim in original ascending order (1, 2, 3...). Reproduce Transferability Considerations verbatim under '2. How to Adapt This Pathway to Your Context'.",
   responseStructure: [
-    "1. Official CHAMP Toolkit Guidance (verbatim steps in sequence)",
-    "2. How to Adapt This Pathway to Your Context (verbatim transferability)",
+    "1. Official CHAMP Toolkit Guidance (Overview and verbatim steps in sequence)",
+    "2. How to Adapt This Pathway to Your Context (verbatim transferability considerations)",
     "3. Evidence from Practice (Peer Examples & Country Journeys)",
-    "4. Relevant Tools and Resources (official tools & verified links)",
+    "4. Relevant Tools and Resources (official repository tools & verified links)",
     "5. Context-Dependent Questions or Evidence Gaps (only when necessary)"
   ],
   synthesisLabel: "Keep synthesis minimal, non-prescriptive, and label explicitly: 'Assistant synthesis based on the cited CHAMP sources'"
@@ -41,6 +42,8 @@ Your mission is to serve as a strict source-grounded implementation companion, N
 STRICT OPERATIONAL RULES:
 1. AUTHORITATIVE SOURCE POLICY & TOOLKIT EVIDENCE FOCUS:
    - Use ONLY evidence retrieved from the CHAMP MCP tools.
+   - Overview is the authoritative explanatory field for Pathways. The Airtable fields 'What It Is' and 'Why It Is Needed' are consolidated into 'Overview'; do NOT rely on empty fields or report them as missing knowledge when Overview is present.
+   - There is NO Enabling Conditions content category in the current knowledge base. Do NOT include Enabling Conditions in responses or confuse Transferability Considerations with Enabling Conditions.
    - Focus strictly on the documented evidence from the Toolkit.
    - Do NOT be overly prescriptive or directive. Present retrieved evidence as documented options and guidance rather than commanding prescriptions.
    - Do NOT provide policy recommendations, action items, or advice outside of the official Toolkit guidance.
@@ -50,21 +53,24 @@ STRICT OPERATIONAL RULES:
 
 2. PROHIBIT UNSUPPORTED PLANNING DETAIL:
    - Do NOT automatically generate 30/60/90-day plans, 6-month or annual roadmaps, timelines, deadlines, artificial milestones, KPIs, institutional mandates, or budgets.
-   - If the user specifically asks for a workplan, distinguish documented Toolkit steps from proposed planning assumptions and ask for necessary context.
+   - If the user specifically asks for a workplan, timetable, or roadmap, explain that the CHAMP Toolkit provides guidance and implementation steps, but does not prescribe a timetable or deadlines. Present documented steps and transferability considerations as planning inputs and distinguish them from proposed local planning assumptions.
 
-3. VERBATIM-FIRST PRESENTATION:
+3. NATURAL CITATION PRESENTATION & CLEAN MARKDOWN:
+   - Use clean, natural references in user-facing markdown (e.g. 'CHAMP Action 4', 'Pathway 4.2', 'Sweden's Country Journey', 'Step 1').
+   - Do NOT clutter user-facing markdown responses with raw Airtable record IDs ('rec...') or raw markdown database citation tables. Full field-level provenance (table, recordId, fieldName, evidenceLevel) is preserved in structured JSON for technical auditability.
+
+4. VERBATIM-FIRST PRESENTATION:
    - Implementation Guidance steps MUST be quoted verbatim in their original ascending step order (1, 2, 3...). Do not paraphrase or reword official steps.
    - Transferability Considerations MUST be reproduced verbatim under "2. How to Adapt This Pathway to Your Context".
-   - Always cite the Airtable table name, Record ID, Step Number, and Evidence Level.
 
-4. DEFAULT RESPONSE STRUCTURE:
-   1. Official CHAMP Toolkit Guidance (verbatim steps in sequence)
+5. DEFAULT RESPONSE STRUCTURE:
+   1. Official CHAMP Toolkit Guidance (Pathway Overview and verbatim steps in sequence)
    2. How to Adapt This Pathway to Your Context (verbatim transferability)
    3. Evidence from Practice (Peer Examples & Country Journeys)
    4. Relevant Tools and Resources (official tools & verified links)
    5. Context-Dependent Questions or Evidence Gaps (only when necessary)
 
-5. MINIMAL, NON-PRESCRIPTIVE SYNTHESIS:
+6. MINIMAL, NON-PRESCRIPTIVE SYNTHESIS:
    - Keep any synthesis minimal, objective, and non-prescriptive. Label it explicitly:
      "Assistant synthesis based on the cited CHAMP sources"`;
 
@@ -162,7 +168,7 @@ export function createChampMcpServer(options: CreateMcpServerOptions = {}): McpS
   // =========================================================================
   server.tool(
     "get_toolkit_pathway",
-    "Retrieve complete, authoritative evidence for a CHAMP Pathway by its identifier (record ID, order like '1.1' or '3.3', or title). Returns: (1) Verbatim implementation guidance steps in strict ascending stepOrder, (2) Verbatim Transferability Considerations ('How to Adapt This Pathway to Your Context'), (3) Linked Peer Learning Examples, (4) Linked Tools & Additional Resources, (5) Concept Boxes, and (6) Field-level provenance with evidenceLevel. CRITICAL AI INSTRUCTION: Reproduce official implementation steps and transferability verbatim in original order without paraphrasing or inventing actions, timelines, or 30/60/90-day roadmaps. Cite exact record IDs.",
+    "Retrieve complete, authoritative evidence for a CHAMP Pathway by its identifier (record ID, order like '1.1' or '3.3', or title). Returns: (1) Overview as authoritative explanatory field, (2) Verbatim implementation guidance steps in strict ascending stepOrder, (3) Verbatim Transferability Considerations ('How to Adapt This Pathway to Your Context'), (4) Linked Peer Learning Examples, (5) Linked Tools & Additional Resources, (6) Concept Boxes, and (7) Field-level provenance with evidenceLevel. CRITICAL AI INSTRUCTION: Use Overview as authoritative pathway explanation; What It Is and Why It Is Needed are empty and consolidated into Overview. There is NO Enabling Conditions category in the Toolkit. Reproduce official implementation steps and transferability verbatim in original order without paraphrasing or inventing timelines, roadmaps, or milestones. In user markdown responses, use clean natural references without raw record IDs or raw citation tables.",
     {
       pathway_identifier: z
         .string()
@@ -316,7 +322,7 @@ export function createChampMcpServer(options: CreateMcpServerOptions = {}): McpS
   // =========================================================================
   server.tool(
     "get_guidance_by_national_lead",
-    "Retrieve authoritative, source-grounded guidance for a Potential National Lead, optional country, and selected CHAMP Action (1-5). Distinguishes direct lead matches from general action pathways. Returns structured Sections 1–5: (1) Official CHAMP Toolkit Guidance (verbatim steps in sequence), (2) How to Adapt This Pathway to Your Context (verbatim transferability), (3) Evidence from Practice (Peer Examples & Country Journeys), (4) Relevant Tools & Resources, and (5) Field-level provenance with evidenceLevel. CRITICAL AI INSTRUCTION: Render official text verbatim in original order. Do NOT generate 30/60/90-day plans, timelines, roadmaps, milestones, KPIs, budgets, or ungrounded policy advice. Label any minimal synthesis in Section F explicitly as 'Assistant synthesis based on the cited CHAMP sources' with evidenceLevel 'assistant_interpretation'.",
+    "Retrieve authoritative, source-grounded guidance for a Potential National Lead, optional country, and selected CHAMP Action (1-5). Distinguishes direct lead matches from general action pathways. Returns structured Sections 1–5: (1) Official CHAMP Toolkit Guidance (Overview and verbatim steps in sequence), (2) How to Adapt This Pathway to Your Context (verbatim transferability considerations), (3) Evidence from Practice (Peer Examples & Country Journeys), (4) Relevant Tools & Resources, and (5) Field-level provenance in JSON. CRITICAL AI INSTRUCTION: Render official text verbatim in original order. Overview is the authoritative explanation for pathways; What It Is and Why It Is Needed are consolidated into Overview. There is NO Enabling Conditions category in the Toolkit. Do NOT generate 30/60/90-day plans, timelines, roadmaps, milestones, KPIs, budgets, or ungrounded policy advice. In user markdown responses, present clean natural references without raw record IDs or raw database tables. Label any minimal synthesis in Section F explicitly as 'Assistant synthesis based on the cited CHAMP sources' with evidenceLevel 'assistant_interpretation'.",
     {
       national_lead: z.string().describe("Required Potential National Lead (e.g. 'Climate / Environment Ministry', 'Finance Ministry', 'Urban / Local Government Ministry')"),
       action_id: z.number().int().min(1).max(5).optional().describe("CHAMP Action Number (1 to 5). Must correspond to one of the five official actions."),

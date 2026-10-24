@@ -20,16 +20,16 @@ export interface ChampPathwayRecord {
   belongsToActionId?: string;
   actionNumber?: number;
   order: number;
-  whatItIs?: string;
-  whyItIsNeeded?: string;
-  overview?: string;
+  overview?: string; // Authoritative explanatory field consolidating pathway concepts
+  whatItIs?: string; // Deprecated / empty in Airtable; consolidated into overview
+  whyItIsNeeded?: string; // Deprecated / empty in Airtable; consolidated into overview
   potentialNationalLead: string[];
   keyActors: string[];
   rawTransferabilityText?: string;
   transferabilityTitle?: string;
   transferabilityPreamble?: string;
   transferability: string[];
-  enablingConditions: string[];
+  enablingConditions?: string[]; // Deprecated - not a substantive category in Airtable
   implementationStepIds: string[];
   exampleIds: string[];
   resourceIds: string[];
@@ -305,11 +305,12 @@ export interface PersonalisedBriefing {
       recordId: string;
       pathwayTitle: string;
       order: number;
+      overview?: string;
       whatItIs?: string;
       whyItIsNeeded?: string;
       potentialNationalLead: string[];
       keyActors: string[];
-      enablingConditions: string[];
+      enablingConditions?: string[];
       isDirectNationalLeadMatch: boolean;
       table: string;
       implementationSteps: {
