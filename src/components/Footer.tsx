@@ -21,13 +21,13 @@ export default function Footer({ partnership = defaultHomePageContent.partnershi
       name: partnership.partner1Name || "CCFLA",
       url: partnership.partner1Url || defaults.partner1Url,
       logo: logoOrDefault(partnership.partner1LogoUrl, defaults.partner1LogoUrl),
-      className: "h-16",
+      className: "h-20",
     },
     {
       name: partnership.partner2Name || "Viable Cities",
       url: partnership.partner2Url || defaults.partner2Url,
       logo: logoOrDefault(partnership.partner2LogoUrl, defaults.partner2LogoUrl),
-      className: "h-10",
+      className: "h-9",
     },
   ];
 
@@ -44,9 +44,9 @@ export default function Footer({ partnership = defaultHomePageContent.partnershi
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-12">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-10 md:gap-16">
           {/* Partner logos */}
-          <div className="flex flex-wrap items-center gap-10">
+          <div className="flex flex-wrap items-center gap-8 sm:gap-10">
             {partners.map((p) => (
-              <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" title={p.name} className="hover:opacity-80">
+              <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" title={p.name} className="hover:opacity-80 flex items-center">
                 <img src={p.logo} alt={p.name} className={`${p.className} w-auto object-contain`} referrerPolicy="no-referrer" />
               </a>
             ))}

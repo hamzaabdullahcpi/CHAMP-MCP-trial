@@ -11,7 +11,7 @@ import StepView from "./components/StepView";
 import CountryJourneysOverview from "./components/CountryJourneysOverview";
 import CountryJourney from "./components/CountryJourney";
 import ChampRoadmapModal from "./components/ChampRoadmapModal";
-import PersonalisedGuidanceView from "./components/PersonalisedGuidanceView";
+import ChatGptMcpModal from "./components/ChatGptMcpModal";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { actionsData } from "./data/content";
 import { defaultCountryJourneys } from "./data/countryJourneysData";
@@ -33,6 +33,7 @@ export default function App() {
   const [countryJourneyTarget, setCountryJourneyTarget] = useState<{ countryId: string; actionId?: number } | null>(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isRoadmapOpen, setIsRoadmapOpen] = useState(false);
+  const [isAiAssistantOpen, setIsAiAssistantOpen] = useState(false);
   const [roadmapComponentId, setRoadmapComponentId] = useState<string | undefined>(undefined);
 
   const handleOpenRoadmap = (componentId?: string) => {
@@ -154,7 +155,6 @@ export default function App() {
   const breadcrumb: { items: BreadcrumbItem[]; width: string } | null =
     isActionPage ? { items: [actionsCrumb, { label: ACTION_MENU_TITLES[Number(currentStep)] ?? `Action ${currentStep}` }], width: 'max-w-6xl mx-auto' }
     : matchedCountry ? { items: [journeysCrumb, { label: matchedCountry.countryName }], width: 'max-w-6xl mx-auto' }
-    : currentStep === 'guidance' ? { items: [{ label: 'Home', onClick: goTo(0) }, { label: 'AI Assistant' }], width: 'max-w-6xl mx-auto' }
     : null;
 
   return (
@@ -171,7 +171,7 @@ export default function App() {
         ref={mainRef} 
         className={`flex-1 min-h-screen overflow-y-auto transition-all duration-300 ${
           isSidebarOpen ? 'ml-0 md:ml-72' : 'ml-0'
-        } ${isActionPage || matchedCountry || currentStep === 'guidance' ? 'bg-surface' : ''}`}
+        } ${isActionPage || matchedCountry ? 'bg-surface' : ''}`}
       >
         {!isSidebarOpen && (
           <button
@@ -218,14 +218,7 @@ export default function App() {
                     if (pathwayIdx !== undefined) setDeepLinkTarget({ pathwayIndex: pathwayIdx, example });
                     else setDeepLinkTarget(null);
                   }}
-              />
-            ) : currentStep === 'guidance' ? (
-              <PersonalisedGuidanceView 
-                actionsData={liveActionsData}
-                countryJourneys={liveCountryJourneys}
-                onNavigateToAction={(actionId) => setCurrentStep(actionId)}
-                onNavigateToCountry={(countryId) => setCurrentStep(countryId)}
-                onBack={() => setCurrentStep(0)}
+                onOpenAiAssistant={() => setIsAiAssistantOpen(true)}
               />
             ) : currentStep === 'journeys' ? (
               <CountryJourneysOverview 
@@ -290,6 +283,12 @@ export default function App() {
         }}
         highlightedComponent={roadmapComponentId}
         roadmapPillars={liveRoadmapPillars}
+      />
+
+      {/* CHAMP ChatGPT MCP Assistant Modal */}
+      <ChatGptMcpModal 
+        isOpen={isAiAssistantOpen}
+        onClose={() => setIsAiAssistantOpen(false)}
       />
     </div>
   );

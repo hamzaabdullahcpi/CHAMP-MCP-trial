@@ -920,33 +920,6 @@ function PathwayCard({
   );
 }
 
-const ACTION_CHAMP_ALIGNMENT: Record<number, { label: string; componentId: string; description: string }> = {
-  1: { 
-    label: "Supports CHAMP Roadmap 3.1", 
-    componentId: "3.1", 
-    description: "Integrate subnational priorities into national climate finance strategies and investment plans" 
-  },
-  2: { 
-    label: "Supports CHAMP Roadmap 3.3", 
-    componentId: "3.3", 
-    description: "Advocate for reform of finance institutions and climate funds" 
-  },
-  3: { 
-    label: "Supports CHAMP Roadmap 3.1 & 3.2", 
-    componentId: "3.1, 3.2", 
-    description: "Integrate subnational priorities (3.1) & Coordinated project preparation (3.2)" 
-  },
-  4: { 
-    label: "Supports CHAMP Roadmap 3.2 & 3.3", 
-    componentId: "3.2, 3.3", 
-    description: "Coordinated project preparation (3.2) & Mobilize finance and shape markets (3.3)" 
-  },
-  5: { 
-    label: "Supports CHAMP Roadmap 3.3", 
-    componentId: "3.3", 
-    description: "Advocate for reform of finance institutions, capacities and climate funds" 
-  },
-};
 
 // Popup showing a peer learning example or tool in full. Used on action pages and the Actions overview.
 export function ExampleModal({ example, theme, onClose }: { example: any | null, theme: ActionTheme, onClose: () => void }) {
@@ -1106,6 +1079,7 @@ export function StepView({
   onClearDeepLink?: () => void;
   onNavigateToCountry?: (countryId: string, actionId?: number) => void;
   onOpenRoadmap?: (componentId?: string) => void;
+  onOpenAiAssistant?: () => void;
 }) {
   const [isSystemsLogicOpen, setIsSystemsLogicOpen] = useState(false);
   const systemsLogicRef = useRef<HTMLDivElement>(null);
@@ -1167,28 +1141,12 @@ export function StepView({
       {/* Header Navigation */}
       <div className="mb-10">
         
-        <div className="flex items-center gap-3 mb-5 flex-wrap">
+        <div className="flex items-center gap-3 mb-5">
           <span 
             className="font-bold tracking-[0.15em] uppercase text-xs text-accent"
           >
             Action {step.id}
           </span>
-
-          {(() => {
-            const alignment = ACTION_CHAMP_ALIGNMENT[Number(step.id)];
-            if (!alignment) return null;
-            return (
-              <button
-                type="button"
-                onClick={() => onOpenRoadmap?.(alignment.componentId)}
-                title={`${alignment.label} • ${alignment.description} (Click to open CHAMP Implementation Roadmap)`}
-                className="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 bg-surface border border-line hover:border-accent text-ink-muted rounded-none cursor-pointer"
-              >
-                <span>{alignment.label}</span>
-                <Maximize2 size={12} />
-              </button>
-            );
-          })()}
         </div>
         
         <h1 className="title-h1 mb-6">{toSentenceCase(step.title || '')}</h1>
@@ -1205,50 +1163,53 @@ export function StepView({
         </p>
 
         {/* Systems logic: label with an (i) that opens the explanation in a small popup */}
+        {/* Systems logic trigger bar */}
         {hasLogic && (
-          <div className="relative mb-4" ref={systemsLogicRef}>
-            <button
-              type="button"
-              onClick={() => setIsSystemsLogicOpen(!isSystemsLogicOpen)}
-              className="inline-flex items-center gap-1.5 body-text-sm font-semibold text-ink hover:text-accent cursor-pointer"
-              aria-expanded={isSystemsLogicOpen}
-              aria-controls="systems-logic-popup"
-            >
-              Systems logic
-              <Info size={15} className="text-accent" aria-hidden="true" />
-            </button>
+          <div className="flex items-center mb-4">
+            <div className="relative" ref={systemsLogicRef}>
+              <button
+                type="button"
+                onClick={() => setIsSystemsLogicOpen(!isSystemsLogicOpen)}
+                className="inline-flex items-center gap-1.5 body-text-sm font-semibold text-ink hover:text-accent cursor-pointer"
+                aria-expanded={isSystemsLogicOpen}
+                aria-controls="systems-logic-popup"
+              >
+                Systems logic
+                <Info size={15} className="text-accent" aria-hidden="true" />
+              </button>
 
-            <AnimatePresence>
-              {isSystemsLogicOpen && (
-                <motion.div
-                  id="systems-logic-popup"
-                  role="dialog"
-                  aria-label="Systems logic"
-                  initial={{ opacity: 0, y: 4 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 4 }}
-                  transition={{ duration: 0.15 }}
-                  className="absolute left-0 top-full mt-2 z-30 w-[min(560px,calc(100vw-3rem))] bg-surface border border-line shadow-lg p-5"
-                >
-                  <div className="flex items-start justify-between gap-4 mb-2">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-accent">
-                      How these implementation pathways connect
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => setIsSystemsLogicOpen(false)}
-                      className="text-ink-muted hover:text-ink cursor-pointer shrink-0"
-                      aria-label="Close systems logic"
-                    >
-                      <X size={16} />
-                    </button>
-                  </div>
-                  <p className="body-text-sm leading-relaxed">
-                    {step.systemsLogic}
-                  </p>
-                </motion.div>
-              )}
-            </AnimatePresence>
+              <AnimatePresence>
+                {isSystemsLogicOpen && (
+                  <motion.div
+                    id="systems-logic-popup"
+                    role="dialog"
+                    aria-label="Systems logic"
+                    initial={{ opacity: 0, y: 4 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 4 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute left-0 top-full mt-2 z-30 w-[min(560px,calc(100vw-3rem))] bg-surface border border-line shadow-lg p-5"
+                  >
+                    <div className="flex items-start justify-between gap-4 mb-2">
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-accent">
+                        How these implementation pathways connect
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => setIsSystemsLogicOpen(false)}
+                        className="text-ink-muted hover:text-ink cursor-pointer shrink-0"
+                        aria-label="Close systems logic"
+                      >
+                        <X size={16} />
+                      </button>
+                    </div>
+                    <p className="body-text-sm leading-relaxed">
+                      {step.systemsLogic}
+                    </p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </div>
         )}
 

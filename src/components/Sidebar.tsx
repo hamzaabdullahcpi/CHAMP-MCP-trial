@@ -26,7 +26,6 @@ export default function Sidebar({
 
   const navItemsGeneral: { id: number | string, label: string }[] = [
     { id: 0, label: "Home" },
-    { id: "guidance", label: "AI Assistant" },
   ];
 
   const navItemsCoreActions: { id: number | string, label: string }[] = [
